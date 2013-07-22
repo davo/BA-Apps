@@ -1,0 +1,567 @@
+ 
+@charset "utf-8";
+/* Main color #425824*/
+@font-face {
+    font-family: 'ProximaNova-Bold-webfont';
+    src: url('ProximaNova-Bold-webfont.eot');
+    src: url('ProximaNova-Bold-webfont-.eot#iefix') format('embedded-opentype'),
+         url('ProximaNova-Bold-webfont.woff') format('woff'),
+         url('ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('ProximaNova-Bold-webfont.svg#proxima_nova_xbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNova-Black-webfont';
+    src: url('ProximaNova-Black-webfont.eot');
+    src: url('ProximaNova-Black-webfont-.eot#iefix') format('embedded-opentype'),
+         url('ProximaNova-Black-webfont.woff') format('woff'),
+         url('ProximaNova-Black-webfont.ttf') format('truetype'),
+         url('ProximaNova-Black-webfont.svg#proxima_nova_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_regular';
+    src: url('proximanova-regular-webfont.eot');
+    src: url('proximanova-regular-webfont-.eot#iefix') format('embedded-opentype'),
+         url('proximanova-regular-webfont.woff') format('woff'),
+         url('proximanova-regular-webfont.ttf') format('truetype'),
+         url('proximanova-regular-webfont.svg#proxima_nova_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* CSS clear
+----------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:top;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}figure {margin:0}
+*{outline:none}
+/* HTML5 */ section, aricle, aside, footer, nav {display:block}
+/* CSS Document */
+a , a * , .projects li{
+	   -moz-transition: all 0.2s ease-in-out;
+	     -o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;}
+.logo, article, article > *, social a span, #dialogBox , #layer, .background, #about .circle, .sliderConteiner, .infinity.show > *,#about > * {
+	   -moz-transition: all 0.6s ease-in-out;
+	     -o-transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;}
+.social a, .social a *,  #whatIdo nav a .icon {
+	   -moz-transition: all 0.4s ease-in-out;
+	     -o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;}
+::selection {background:#ffb82a;color:#fff;}
+::-moz-selection {background:#ffb82a;color:#fff;}
+::-webkit-selection {background:#ffb82a;color:#fff;}
+img { display:block}
+body {font-family: 'proxima_nova_regular'; line-height:18px; color:#000; background-color:#fff; text-align:center; overflow-x:hidden}
+/*section colors*/
+#about { background:rgba(102,210,189,0.2)}
+#contact { background:/*rgba(255,184,42,0.3)*/#fff1d4}
+body > footer { background:#ffe6b2}
+h1 { padding-top:70px;; font-family: 'ProximaNova-Bold-webfont'; text-transform:uppercase; text-align:center; font-size:30px; clear:both; color:#365851; letter-spacing: 2px;}
+body #main > section  h1:before{content:'......' ; position:relative; font-family:'Tahoma'; top:-8px; right:15px; opacity:.3; color:#000}
+body #main > section  h1:after{content:'......' ; position:relative;font-family:'Tahoma'; top:-8px; left:15px; opacity:.3; color:#000}
+body #main > section { position:relative; clear:both }
+#main { position:relative; margin-top:110px}
+.infinity > *{ opacity:0}
+.infinity.show > * { opacity:1}
+
+/* CSS header
+----------------------------------*/
+body > header { height:197px; padding-top:33px; position:fixed; width:100%; top:0; left:0; background:none repeat scroll 0 0 rgba(255,255,255,0.9); z-index:10}
+body > header nav { width:970px; margin:0 auto;}
+body > header h1 { padding-top:0}
+.logo { position:relative; display:block; width:180px; height:41px; background:url(../images/sprite_new.png)0 0 no-repeat; overflow:hidden; text-indent:-999px; left:50%; margin-left:-94px}
+body > header nav > a { border:3px solid transparent; display:block; float:left; height:44px; line-height: 43px; font-size:14px; text-transform:uppercase; text-decoration:none; padding:0 18px; letter-spacing:0.11em; font-family: 'ProximaNova-Bold-webfont'; color:#000; position:relative; top:-44px; text-align:center}
+body > header nav > a.selected { border:3px solid #000 !important}
+body > header nav > a { margin-left:65px; width:85px; margin-right:10px; white-space:pre}
+body > header nav > a + a { margin-left:0px; width:134px}
+body > header nav > a + a + a { margin-left:195px; width:161px}
+body > header nav > a + a + a + a { margin-left:0px; width:85px}
+body > header nav > a:hover { border-color:#ddd}
+
+/* CSS about
+----------------------------------*/
+#about { position:relative; height:471px}
+#about h1 {padding-bottom:20px; letter-spacing: 2px;}
+#about p { color:#709b93; font-size:23px; line-height:36px; text-align:center; padding:40px 0 70px}
+#about nav a { z-index:1; border-radius:50%; box-shadow:0 0 0 3px #000 inset}
+#about nav a:hover { background-color:#66d2bd !important}
+#about .next { display:block; width:51px; height:51px; background:url(../images/sprite_new.png) 0 -47px #feb830; position:absolute; top:50%; right:0; margin-top:-25px}
+#about .prev { display:block; width:51px; height:51px; background:url(../images/sprite_new.png) 0 -98px #feb830; position:absolute; top:50%; left:0; margin-top:-25px}
+#AboutSlider { width:870px; height:360px; margin:0 auto; overflow:hidden; position:relative}
+.sliderConteiner { width:3480px; position:relative; left: -2610px}
+#AboutSlider h2 { color:#66d2bd; font-size:24px; line-height:50px;  font-family: 'ProximaNova-Bold-webfont';}
+.sliderConteiner > section { width:870px; float:right; height:360px; position:relative}
+#AboutSlider .circle { width:180px; height:180px; border:15px solid #fff; background:url(../images/sprite_new.png) -208px -37px #fff; top:50%; position:absolute; margin:-110px 0 0 -110px; left:50%; border-radius:50%; z-index:1}
+#AboutSlider.slide2 .circle { background-position:-387px -43px}
+#AboutSlider.slide3 .circle { background-position:-561px -43px}
+#AboutSlider.slide4 .circle { background-position:-747px -35px}
+#AboutSlider.slide1 .sliderConteiner {left: -2610px}
+#AboutSlider.slide2 .sliderConteiner {left: -1740px}
+#AboutSlider.slide3 .sliderConteiner {left: -870px}
+#AboutSlider.slide4 .sliderConteiner {left: 0px}
+
+/*slide1*/
+#welcome span {position:absolute;  display:block; background:url(../images/sprite_new.png)}
+#welcome .item1 { width:96px; height:82px; background-position:-3px -1552px; left:115px; top:47px}
+#welcome .item2 { width:44px; height:47px; background-position:-99px -1551px; left:287px; top:49px}
+#welcome .item3 { width:54px; height:47px; background-position:0px -1637px; left:133px; top:200px}
+#welcome .item4 { width:47px; height:85px; background-position:-144px -1548px; left:247px; top:153px}
+#welcome .item5 { width:58px; height:35px; background-position:-55px -1634px; left:220px; top:284px}
+#welcome .item6 { width:60px; height:47px; background-position:-49px -1745px; left:578px; top:46px}
+#welcome .item7 { width:55px; height:41px; background-position:-111px -1738px; left:707px; top:47px}
+#welcome .item8 { width:50px; height:70px; background-position:0 -1685px; left:607px; top:156px}
+#welcome .item9 { width:37px; height:37px; background-position:-49px -1685px; left:703px; top:152px}
+#welcome .item10 { width:74px; height:49px; background-position:-119px -1635px; left:563px; top:276px}
+#welcome .item11 { width:58px; height:51px; background-position:-89px -1685px; left:726px; top:234px}
+#welcome span {transform: translate(0px,20px) scale(0);-webkit-transform: translate(0px,20px) scale(0);
+	   -moz-transition: all 1.5s ease-in-out;
+	     -o-transition: all 1.5s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
+			transition: all 1.5s ease-in-out;}
+.slide1 #welcome span {transform: translate(0px,0px) scale(1);-webkit-transform: translate(0px,0px) scale(1);} 
+/*slide2*/
+#wizual span {position:absolute;  display:block; background:url(../images/sprite_new.png)}
+#wizual .item1 { width:708px; height:251px; background-position:-240px -1711px; left:85px; top:57px}
+#wizual .item2 { width:0px; height:155px; background-position:-224px -1548px; left:76px; top:105px;}
+#wizual .item3 { background: none; border: 4px solid #C5E2DC; border-radius: 50%; height: 11px; left: 77px; top: 241px; width: 11px;}
+#wizual .item4 { background: none; border: 4px solid #C5E2DC; border-radius: 50%; height: 11px; left: 254px; top: 173px; width: 11px;}
+#wizual .item5 { background: none; border: 4px solid #C5E2DC; border-radius: 50%; height: 11px; left: 607px; top: 173px; width: 11px;}
+#wizual .item6 { background: none; border: 4px solid #C5E2DC; border-radius: 50%; height: 11px; left: 788px; top: 105px; width: 11px;}
+#wizual .item3,
+#wizual .item4,
+#wizual .item5,
+#wizual .item6 {transform:  scale(0); -webkit-transform:  scale(0);  }
+#wizual span {
+	   -moz-transition: all 2s ease-in-out;
+	     -o-transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out;
+			transition: all 2s ease-in-out;}
+.slide2 #wizual .item3,
+.slide2 #wizual .item4,
+.slide2 #wizual .item5,
+.slide2 #wizual .item6 {transform:  scale(1); -webkit-transform:  scale(1);  }
+.slide2 #wizual .item2 { width:730px}
+/*slide3*/
+#simply span {position:absolute;  display:block; background:url(../images/sprite_new.png)}
+#simply .item1 { width:147px; height:85px; background-position:1px -1792px; left:142px; top:78px}
+#simply .item2 { width:28px; height:33px; background-position:1px -1881px; left:134px; top:182px}
+#simply .item3 { width:28px; height:33px; background-position:-30px -1882px; left:201px; top:244px}
+#simply .item4 { width:17px; height:21px; background-position:-57px -1881px; left:275px; top:180px}
+#simply .item5 { width:49px; height:61px; background-position:-77px -1881px; left:285px; top:267px}
+#simply .item6 { width:65px; height:33px; background-position:-69px -1946px; left:502px; top:66px}
+#simply .item7 { width:65px; height:33px; background-position:-69px -1946px; left:709px; top:82px}
+#simply .item8 { width:14px; height:20px; background-position:-155px -1866px; left:646px; top:111px}
+#simply .item9 { width:58px; height:66px; background-position:-147px -1798px; left:659px; top:187px}
+#simply .item10 { width:50px; height:30px; background-position:-126px -1911px; left:578px; top:200px}
+#simply .item11 { width:66px; height:43px; background-position:-1px -1919px; left:463px; top:260px}
+#simply span {transform: translate(0px,20px) scale(0);-webkit-transform:translate(0px,20px) scale(0);
+	   -moz-transition: all 1.5s ease-in-out;
+	     -o-transition: all 1.5s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
+			transition: all 1.5s ease-in-out;}
+.slide3 #simply span {transform: translate(0px,0px) scale(1);-webkit-transform:translate(0px,00px) scale(1);}
+/*slide4*/
+#think span {position:absolute;  display:block; background:url(../images/sprite_new.png)}
+#think .item1 { width:64px; height:64px; background-position:-1px -1475px; left:145px; top:75px}
+#think .item2 { width:48px; height:48px; background-position:-65px -1483px; left:241px; top:138px}
+#think .item3 { width:78px; height:78px; background-position:-167px -1469px; left:103px; top:178px}
+#think .item4 { width:24px; height:24px; background-position:-247px -1517px; left:243px; top:267px}
+#think .item5 { width:40px; height:40px; background-position:-245px -1475px; left:311px; top:278px}
+#think .item6 { width:55px; height:55px; background-position:-112px -1476px; left:571px; top:91px}
+#think .item7 { width:78px; height:78px; background-position:-167px -1469px; left:715px; top:84px}
+#think .item8 { width:30px; height:30px; background-position:-285px -1486px; left:627px; top:183px}
+#think .item9 { width:48px; height:48px; background-position:-65px -1483px; left:681px; top:196px}
+#think .item10 { width:55px; height:55px; background-position:-112px -1476px; left:554px; top:261px}
+#think span {
+transform: rotate(180deg) scale(0);-webkit-transform: rotate(180deg) scale(0);
+	   -moz-transition: all 1.5s ease-in-out;
+	     -o-transition: all 1.5s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
+			transition: all 1.5s ease-in-out;}
+.slide4 #think span {transform: rotate(0deg) scale(1);-webkit-transform: rotate(0deg) scale(1);}
+
+/* CSS whatIdo Sections 
+----------------------------------*/
+.what{ width:100%; margin:0 auto; clear:both; text-align:left;min-height:430px }
+.what div { margin:0 auto; width:980px}
+#whatIdo h1 { color:#454545; padding-bottom:20px;  letter-spacing: 2px;}
+.what aside{ float:left; height:280px; width:480px;margin:75px 0; position:relative}
+.what article { float:left; width:480px; padding:160px  10px;}
+.what article h2 { font-size:30px; color:#65d2bd; padding-bottom:20px; font-family: 'ProximaNova-Bold-webfont'; }
+.what article p { color:#6b8680; font-size:16px; line-height:24px; }
+.what:nth-child(2n-1) { text-align:right; background:#e8fbf7; }
+.what  aside span { display:block; position:absolute}
+/*whatIdo*/
+#whatIdo aside .item1 { width:321px; height:273px; background:url(../images/sprite_new.png) 0 -308px; top:3px; left:85px}
+#whatIdo aside .item1:after {content: "24%"; display: block; font-family: 'ProximaNova-Black-webfont'; font-size: 45px;  left: 48px; position: relative;  top: 55px;}
+#whatIdo aside .item2 { width:96px; height:9px; background:#6ad2bd; border:3px solid #000; border-radius:2px; left: 257px; top: 48px;}
+#whatIdo aside .item3 { width:52px; height:9px; background:#6ad2bd; border:3px solid #000; border-radius:2px; left: 257px; top: 73px;}
+#whatIdo aside .item4 { width:22px; height:9px; background:#6ad2bd; border:3px solid #000; border-radius:2px; left: 257px; top: 98px;}
+/*animation*/
+#animation aside .item1 { width:81px; height:81px; background:url(../images/sprite_new.png) -372px -309px ; top:32px; left:102px}
+#animation aside .item2 { width:105px; height:71px; background:url(../images/sprite_new.png) -531px -278px ; top:0px; left:261px}
+#animation aside .item3 { width:57px; height:57px; background:url(../images/sprite_new.png)  -474px -415px ; top:136px; left:207px}
+#animation aside .item4 { width:117px; height:109px; background:url(../images/sprite_new.png) -323px -440px; top:158px; left:52px}
+#animation aside .item5 { width:120px; height:105px; background:url(../images/sprite_new.png)  -595px -394px ; top:116px; left:326px}
+/*prezentatnion*/
+#prezentation aside .item1  { width:355px; height:266px; background:url(../images/sprite_new.png) 0px -582px ; top:6px; left:65px}
+#prezentation aside .item2  { width:355px; height:26px; background:url(../images/sprite_new.png) 0 -830px ; top:49px; left:65px}
+/*signs*/
+#signs aside .item1  { width:342px; height:252px; background:url(../images/sprite_new.png) -356px -589px ; top:10px; left:65px}
+#signs aside .item2  { width:112px; height:44px; background:#6ad2bd ; left: 244px; top: 40px;}
+#signs aside .item3  { width:100px; height:45px; background:#FFB830 ; top:78px; left:110px}
+#signs aside .item4  { width:85px; height:65px; background:url(../images/sprite_new.png) -566px -730px ; top:151px; left:276px}
+/*maps*/
+#maps aside .item1  { width:353px; height:226px; background:url(../images/sprite_new.png)  -555px -843px  ; top:30px; left:65px}
+#maps aside .item2  { width:86px; height:101px; background:url(../images/sprite_new.png) -718px -726px   ; top:10px; left:225px}
+/*forms*/
+#forms aside .item1  { width:209px; height:259px; background:url(../images/sprite_new.png)  0 -872px  ;left: 137px; top: 15px;}
+#forms aside .item2  { width:226px; height:268px; background:url(../images/sprite_new.png) -230px -862px ; top:5px; left:130px}
+#forms aside .item3  { width:76px; height:170px; background:url(../images/sprite_new.png) -479px -903px ; left: 275px; top: 48px;}
+/*icons*/
+#icons aside .item1 { width:62px; height:44px; background:url(../images/sprite_new.png) -700px -298px  ; top:25px; left:91px}
+#icons aside .item2 { width:30px; height:45px; background:url(../images/sprite_new.png) -813px -277px ; top:0px; left:202px}
+#icons aside .item3 { width:48px; height:47px; background:url(../images/sprite_new.png) -884px -262px ; top:10px; left:300px}
+#icons aside .item4 { width:51px; height:48px; background:url(../images/sprite_new.png) -947px -308px ; top:60px; left:365px}
+#icons aside .item5 { width:61px; height:48px; background:url(../images/sprite_new.png) -723px -385px  ; top:111px; left:113px}
+#icons aside .item6 { width:58px; height:50px; background:url(../images/sprite_new.png) -845px -358px ; top:85px; left:235px}
+#icons aside .item7 { width:47px; height:33px; background:url(../images/sprite_new.png) -936px -390px  ; top:144px; left:350px}
+#icons aside .item8 { width:53px; height:53px; background:url(../images/sprite_new.png) -727px -488px ; top:220px; left:115px}
+#icons aside .item9 { width:50px; height:52px; background:url(../images/sprite_new.png) -826px -445px ; top:175px; left:218px}
+#icons aside .item10 { width:65px; height:69px; background:url(../images/sprite_new.png) -886px -455px   ; top:210px; left:300px}
+/*icons*/
+#bus aside .item1 { width:376px; height:231px; background:url(../images/sprite_new.png) -252px -1132px  ; top:35px; left:75px}
+#bus aside .item2 { width:233px; height:55px; background:url(../images/sprite_new.png) 0px -1308px ; top:211px; left:145px}
+#bus aside .item3 { width:110px; height:76px; background:url(../images/sprite_new.png) -131px -1163px ; top:65px; left:120px}
+#bus aside .item4 { width:116px; height:119px; background:url(../images/sprite_new.png) 0px -1163px ; top:65px; left:290px}
+
+/* CSS portfolio
+----------------------------------*/
+#portfolio > p {color: #6B8680;  font-size: 16px;  line-height: 24px; padding:15px 0}
+.projects { width:920px; margin:20px auto  }
+.projects nav{clear: both; float: left; margin-bottom: 50px; width: 920px;}
+.projects li { width:100px; height:100px; border:12px solid #e8fbf7; background:#e8fbf7; border-radius:50%; margin:20px 30px; float:left}
+.projects li.p1 { background:url(../images/sprite_new.png)  no-repeat scroll 25px -1372px #E8FBF7}
+.projects li.p2 { background:url(../images/sprite_new.png)  no-repeat scroll -62px -1374px  #E8FBF7}
+.projects li.p3 { background:url(../images/sprite_new.png)  no-repeat scroll -160px -1369px  #E8FBF7}
+.projects li.p4 { background:url(../images/sprite_new.png)  no-repeat scroll -257px -1371px  #E8FBF7}
+.projects li.p5 { background:url(../images/sprite_new.png)  no-repeat scroll -362px -1371px  #E8FBF7}
+.projects li.p6 { background:url(../images/sprite_new.png)  no-repeat scroll -475px -1371px  #E8FBF7}
+.projects li.p7 { background:url(../images/sprite_new.png)  no-repeat scroll -565px -1369px  #E8FBF7}
+.projects li.p8 { background:url(../images/sprite_new.png)  no-repeat scroll -671px -1371px  #E8FBF7}
+.projects li.p9 { background:url(../images/sprite_new.png)  no-repeat scroll -798px -1371px  #E8FBF7}
+.projects li a { text-decoration:none; font-size:18px; line-height:20px; color:#66d2bd; font-family: 'ProximaNova-Bold-webfont'; text-transform:uppercase; margin:-10px -42px; display:block; padding-top:55px;  background:url(../images/sprite_new.png)  no-repeat scroll -874px 12px #fff; opacity:0; position:relative; top:-10px; height:77px;}
+.projects li a:hover { opacity:1}
+.projects li a strong { display:block; color:#ffb82a; font-size:14px; text-transform:uppercase; font-family: 'proxima_nova_regular'; padding-top:15px}
+.projects li:hover a { top:-2px}
+
+/* CSS contacr
+----------------------------------*/
+#contact { padding-bottom:40px; height:516px}
+#contact h1 {color:#ffb82a; padding-bottom:30px; letter-spacing: 2px;}
+#contact p { font-size:18px; line-height:24px; color:#9c9485}
+#contact h3 {color:#ffb82a; font-size:14px; padding:30px 0 10px;font-family: 'ProximaNova-Bold-webfont'; text-transform:uppercase}
+#contact p a { font-size:18px; color:#66d2bd; text-decoration:none;font-family: 'ProximaNova-Bold-webfont';}
+#contact p + h3 + p a:hover { cursor:default}
+.social { padding:40px 0 10px}
+.social a { width:80px; height:80px;  display:inline-block;}
+.social a span {width:60px; height:60px; border-radius:50%; display:inline-block; overflow:hidden; text-indent:-500px; border:10px solid #fff1d4; background:#fff;}
+.social a span i {width:60px; height:60px; border-radius:50%; display:block; overflow:hidden; text-indent:-500px;  background:url(../images/sprite_new.png) -187px 0 no-repeat #fff;}
+.social a.mail span i	{ background-position: -639px -1170px}
+.social a.fb span i		{ background-position: -719px -1170px}
+.social a.tw span i		{ background-position: -799px -1170px} 
+.social a.pin span i	{ background-position: -879px -1170px}
+.social a:hover span i {border-color:#FFB82A; background-color:#FFB82A}
+.social a.mail:hover span i	{ background-position:-639px -1120px}
+.social a.fb:hover span	i	{ background-position:-719px -1120px}
+.social a.tw:hover span i	{ background-position:-799px -1120px} 
+.social a.pin:hover span i	{ background-position:-879px -1120px}
+.social + h3 + p a:hover { text-decoration:underline !important} 
+
+/* CSS footer
+----------------------------------*/
+body > footer { color:#a39270; font-size:14px; text-transform:uppercase; line-height:70px;}
+body > footer a {font-family: 'ProximaNova-Bold-webfont'; color:#66d2bd; text-decoration:none}
+body > footer a:hover { text-decoration:underline}
+
+/* CSS layer
+----------------------------------*/
+body.dialog {overflow: hidden; }
+body #layer {width:100% !important; position:absolute; left:0; height:100%!important; overflow-y:scroll;background:rgba(0,0,0,.8);}
+#layer .background {  position:fixed; left:0; top:0; width:90% !important; height:100% !important; z-index:1}
+#dialogBox { position:absolute; width:970px; min-height:300px; top:90px; left:50%; margin-left:-485px; z-index:1000;}
+.jcarousel-container {background:#fff; margin-bottom:100px; z-index:1}
+#dialogBox nav {position: relative; z-index: 110; text-decoration:none} 
+#layer .close { display:block; position:absolute; right:0; top:0; width:50px; height:50px; background:#000; text-indent:-500px; overflow:hidden}
+#layer .close span { display:block; position:absolute; right:0; top:0; width:50px; height:50px; background:#000 url(../images/back.png) center center no-repeat; text-indent:-500px; overflow:hidden;
+  -webkit-transform:rotate(00deg);
+  -moz-transform:rotate(00deg);
+  -o-transform:rotate(00deg);
+  -ms-transform:rotate(00deg);
+  transform:rotate(00deg);}
+#layer .close:hover span {
+	-webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);}
+#layer #prev { display:block; position:absolute; left:-20px; top:552px; width:50px; height:50px; background:#3fc7ad; overflow:hidden; text-decoration:none;letter-spacing: 0.1em;}
+#layer #prev span {background: none repeat scroll 0 0 #3FC7AD;  color: #FFFFFF;  display: block;  height: 50px;  line-height: 48px;    margin-left: 50px;  padding-right: 15px;  text-indent: 0;font-family: 'ProximaNova-Bold-webfont'; text-transform:uppercase}
+#layer #next { display:block; position:absolute; right:-20px; top:552px; width:50px; height:50px; background:#3fc7ad; text-indent:0; overflow:hidden;  text-decoration:none;letter-spacing: 0.1em;}
+#layer #next span {background: none repeat scroll 0 0 #3FC7AD; color: #FFFFFF; display: block;  float: right;  font-family: 'ProximaNova-Bold-webfont';  height: 50px;  line-height: 48px;  margin-right: 50px;  padding-left: 15px;  text-indent: 0; text-transform: uppercase;}
+#layer #prev:after {content:''; display:block; position:absolute; top:19px; left:22px;width: 0px;height: 0px;border-style: solid;border-width: 5px 5px 5px 0;border-color: transparent #ffffff transparent transparent;}
+#layer #next:after {content:''; display:block; position:absolute; top:19px; right:22px;width: 0px;height: 0px;border-style: solid;border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #ffffff;}
+
+#layer #prev:hover { width:138px} 
+#layer #next:hover { width:117px;} 
+#dialogBox header .preview { height:500px; overflow:hidden; margin:-80px -80px 0px}
+#dialogBox header h1 { padding-bottom: 65px; padding-top: 75px; color:#444444;letter-spacing: 0.06em;}
+#dialogBox article, #dialogBox li { padding:80px; width: 810px;}
+#dialogBox article, #dialogBox li p { font-size:18px; line-height:30px; text-align:left; color:#444444}
+#dialogBox li p a {color:#3FC7AD}
+#dialogBox article, #dialogBox li p strong { font-weight:bold}
+#dialogBox article, #dialogBox li h3 { text-transform:uppercase; font-family: 'ProximaNova-Bold-webfont'; color:#444444; text-align:center; line-height:90px; letter-spacing: 0.06em;}
+#dialogBox article, #dialogBox li footer {border: 2px solid #4B4B4B; clear: both; float: left; width: 806px;}
+#dialogBox article, #dialogBox li footer div { float:left; width:268px; text-align:center}
+#dialogBox article, #dialogBox li footer div:nth-child(2) { border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
+#dialogBox article, #dialogBox li footer p { text-align:center; color:#c6c6c6; font-family: 'ProximaNova-Bold-webfont'; text-transform:uppercase; line-height:68px; font-size:14px}
+#dialogBox article, #dialogBox li footer strong {font-family: 'ProximaNova-Black-webfont'; text-transform:uppercase; color:#ffb82a; font-size:48px; line-height:44px; padding-bottom:15px; display:block}
+#dialogBox article, #dialogBox li footer strong + p { background:#e0f6f2; color:#3fc7ad; font-size:16px}
+.jcarousel-clip.jcarousel-clip-horizontal { overflow:hidden}
+
+/* CSS animation
+----------------------------------*/
+body > header { height:77px; background:rgba(255,255,255,0.9)}
+body > header nav { opacity:0; position: relative; top:-100px;}
+#layer { display:none; opacity:0; z-index:1111}
+#layer .background {opacity:0;height:100%; }
+#about { width:0}
+#about > * { opacity:0}
+#about.show > * { opacity:1}
+
+/* CSS animation Infinity
+----------------------------------*/
+#animation aside span,
+#maps aside span,
+#forms aside span,
+#icons aside span,
+#bus aside span,
+#prezentation aside span,
+#signs aside span,
+#whatIdo aside span,
+.projects li,
+#about > *   {
+	   -moz-transition: all 1s ease-in-out;
+	     -o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;}
+/*whatIdo*/
+#whatIdo aside span {margin-left:-50px}
+#whatIdo aside .item2,
+#whatIdo aside .item3,
+#whatIdo aside .item4 {width:0px}
+#whatIdo.show aside span {margin-left:0px}
+#whatIdo.show aside .item2 {width:96px}
+#whatIdo.show aside .item3 {width:52px}
+#whatIdo.show aside .item4 {width:22px}
+/*prezentation*/
+#prezentation aside .item1 {margin-left:-50px; height:266px}
+#prezentation aside .item2 {margin-left:-50px; top:254px}
+#prezentation.show aside .item1 { margin-left:0; animation:down 2s; -webkit-animation:down 2s;}
+#prezentation.show aside .item2 { margin-left:0; animation:downBar 2s; -webkit-animation:downBar 2s;}
+@keyframes down {        
+        0%   	{height:43px}
+		50%   	{height:43px}
+        100% 	{height:266px}
+}
+@-webkit-keyframes down {        
+        0%   	{height:43px}
+		50%   	{height:43px}
+        100% 	{height:254px}
+}
+@keyframes downBar {        
+        0%   	{top:49px}
+		50%   	{top:49px}
+        100% 	{top:254px}
+}
+@-webkit-keyframes downBar {        
+        0%   	{top:43px}
+		50%   	{top:43px}
+        100% 	{top:266px}
+}
+/*signs*/
+#signs aside .item1,
+#signs aside .item2,
+#signs aside .item3,
+#signs aside .item4  {margin-left:50px; opacity:1}
+#signs.show aside .item1 { margin-left:0}
+#signs.show aside .item2 { margin-left:0; opacity:0}
+#signs.show aside .item3 { margin-left:0; opacity:0}
+#signs.show aside .item4 { margin-left:0; animation:move 1s 6; -webkit-animation:move 1s 6;}
+@keyframes move {        
+        0%   	{left:276px}
+        50% 	{left:271px}
+        100% 	{left:276px}
+}
+@-webkit-keyframes move {        
+        0%   	{left:276px}
+        50% 	{left:271px}
+        100% 	{left:276px}
+}
+/*animation*/
+#animation aside .item1 {margin-left: -25px; margin-top: -20px;}
+#animation aside .item2 {margin-left: 35px; margin-top: -20px;}
+#animation aside .item3 {margin-left: 0px; margin-top: -5px;}
+#animation aside .item4 {margin-left: -25px; margin-top: 10px;}
+#animation aside .item5 {margin-left: 25px; margin-top: 5px;}
+#animation.show  aside .item1,
+#animation.show  aside .item2,
+#animation.show  aside .item3,
+#animation.show  aside .item4,
+#animation.show  aside .item5 {margin-left: 0; margin-top: 0;}
+#animation  aside.state2 .item1 {left: 261px;  top: 0;}
+#animation  aside.state2 .item2 {left: 339px; top: 116px;}
+#animation  aside.state2 .item4 {left: 59px;  top: 48px;}
+#animation  aside.state2 .item5 {left: 230px; top: 213px;}
+/*s3*/
+#animation  aside.state3 .item1 {left: 311px; top: 160px;}
+#animation  aside.state3 .item2 {left: 153px; top: 241px;}
+#animation  aside.state3 .item4 {left: 179px; top: 2px;}
+#animation  aside.state3 .item5 {left: 39px; top: 97px;}
+/*s4*/
+#animation  aside.state3 .item1 {left: 311px; top: 160px;}
+#animation  aside.state3 .item2 {left: 153px; top: 241px;}
+#animation  aside.state3 .item4 {left: 179px; top: 2px;}
+#animation  aside.state3 .item5 {left: 39px; top: 97px;}
+
+/*maps*/
+#maps aside .item2 { margin-top:-50px}
+#maps aside .item1 { margin-top:50px}
+#maps.show aside .item2,
+maps.show aside .item1 { margin-top:0px}
+/*forms*/
+#forms aside .item1 { margin-left:-50px}
+#forms aside .item2 { margin-left:-100px}
+#forms aside .item3 { margin-left:50px}
+#forms.show  aside .item1,
+#forms.show  aside .item2,
+#forms.show  aside .item3 { margin-left:0px}
+/*icons*/
+#icons aside .item1 {margin-left: -25px; margin-top: -20px;}
+#icons aside .item2 {margin-left: -10px; margin-top: -20px;}
+#icons aside .item3 {margin-left: 10px; margin-top: -20px;}
+#icons aside .item4 {margin-left: 25px; margin-top: -15px;}
+#icons aside .item5 {margin-left: -25px; margin-top: 5px;}
+#icons aside .item6 {margin-left: 0px; margin-top: -5px;}
+#icons aside .item7 {margin-left: 25px; margin-top: 10px;}
+#icons aside .item8 {margin-left: -25px; margin-top: 25px;}
+#icons aside .item9 {margin-left: -10px; margin-top: 20px;}
+#icons aside .item10 {margin-left: 10px; margin-top: 20px;}
+#icons.show  aside .item1,
+#icons.show  aside .item2,
+#icons.show  aside .item3,
+#icons.show  aside .item4,
+#icons.show  aside .item5,
+#icons.show  aside .item6,
+#icons.show  aside .item7,
+#icons.show  aside .item8,
+#icons.show  aside .item9,
+#icons.show  aside .item10 {margin-left: 0; margin-top: 0;}
+/*bus*/
+#bus aside .item1 {margin-left: -20px;}
+#bus aside .item2 {margin-left: 50px;}
+#bus.show aside .item1,
+#bus.show aside .item2,
+#bus.show aside .item3,
+#bus.show aside .item4 {margin-left: 0; margin-top: 0;}
+/*projects*/
+.projects li { position:relative}
+.projects li.p1 { left:-50px}
+.projects li.p2 { left:-40px}
+.projects li.p7 { left:-30px}
+.projects li.p4 { left:-20px}
+.projects li.p5 { left:-10px}
+.projects li.p6 { left:40px}
+.projects li.p3 { left:30px}
+.projects li.p8 { left:20px}
+.projects li.p9 { left:10px}
+.show .projects li.p1,
+.show .projects li.p2,
+.show .projects li.p3,
+.show .projects li.p4,
+.show .projects li.p5,
+.show .projects li.p6,
+.show .projects li.p7,
+.show .projects li.p8,
+.show .projects li.p9 { left:0px}
+
+/** initial setup **/
+.nano {
+  position : relative;
+  width : 100%;
+  height : 100%;
+  overflow : hidden;
+}
+.nano .content {
+  position : absolute;
+  overflow : scroll;
+  overflow-x : hidden;
+  top : 0;
+  right : 0;
+  bottom : 0;
+  left : 0;
+}
+.nano .content:focus {
+  outline: thin dotted;
+}
+.nano .content::-webkit-scrollbar {
+  visibility: hidden;
+}
+.has-scrollbar .content::-webkit-scrollbar {
+  visibility: visible;
+}
+.nano > .pane {
+  background : rgba(0,0,0,.25);
+  margin-top: 50px;
+  position : absolute;
+  width : 10px;
+  right : 0;
+  top : 0;
+  bottom : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity : .01;
+  -webkit-transition : .2s;
+  -moz-transition : .2s;
+  -o-transition : .2s;
+  transition : .2s;
+  -moz-border-radius : 5px;
+  -webkit-border-radius : 5px;
+  border-radius : 5px;
+}
+.nano > .pane > .slider {
+  background: #444;
+  background: rgba(0,0,0,.5);
+  position : relative;
+  margin : 0 1px;
+  -moz-border-radius : 3px;
+  -webkit-border-radius : 3px;
+  border-radius : 3px;
+}
+.nano:hover > .pane, .pane.active, .pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity : 0.99;
+}
+
+.what a {color: #ffb82a;text-decoration: none;	margin-top: 20px;	}
+.what a:hover {	color: #ffb82a;	text-decoration: underline;	}
+.what a:visited {color: #ffb82a;text-decoration: underline;	}
+/* Localized */

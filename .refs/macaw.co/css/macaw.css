@@ -1,0 +1,627 @@
+/*** fluid grid ***/
+
+.fluid-span-1 {
+  width: 6.805555555555556%;
+}
+
+.fluid-span-2 {
+  width: 15.277777777777779%;
+}
+
+.fluid-span-3 {
+  width: 23.75%;
+}
+
+.fluid-span-4 {
+  width: 32.22222222222223%;
+}
+
+.fluid-span-5 {
+  width: 40.69444444444444%;
+}
+
+.fluid-span-6 {
+  width: 49.16666666666667%;
+}
+
+.fluid-span-7 {
+  width: 57.63888888888889%;
+}
+
+.fluid-span-8 {
+  width: 66.11111111111111%;
+}
+
+.fluid-span-9 {
+  width: 74.58333333333334%;
+}
+
+.fluid-span-10 {
+  width: 83.05555555555556%;
+}
+
+.fluid-span-11 {
+  width: 91.52777777777779%;
+}
+
+.fluid-span-12 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 8.472222222222223%;
+}
+
+.fluid-offset-2 {
+  margin-left: 16.944444444444446%;
+}
+
+.fluid-offset-3 {
+  margin-left: 25.416666666666668%;
+}
+
+.fluid-offset-4 {
+  margin-left: 33.88888888888889%;
+}
+
+.fluid-offset-5 {
+  margin-left: 42.36111111111111%;
+}
+
+.fluid-offset-6 {
+  margin-left: 50.833333333333336%;
+}
+
+.fluid-offset-7 {
+  margin-left: 59.30555555555556%;
+}
+
+.fluid-offset-8 {
+  margin-left: 67.77777777777779%;
+}
+
+.fluid-offset-9 {
+  margin-left: 76.25000000000001%;
+}
+
+.fluid-offset-10 {
+  margin-left: 84.72222222222223%;
+}
+
+.fluid-offset-11 {
+  margin-left: 93.19444444444446%;
+}
+
+.fluid-offset-12 {
+  margin-left: 101.66666666666667%;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  font: 300 18px/1.5 'museo-sans', 'Open Sans', sans-serif;
+  color: rgb(182, 182, 182);
+  text-align: center;
+  min-width: 980px;
+}
+
+a {
+  display: inline-block;
+  line-height: 1.38;
+  color: rgb(78, 169, 244);
+}
+
+button {
+  display: inline-block;
+  float: left;
+  width: 28.406%;
+  height: 34px;
+  padding-bottom: 2px;
+  background: rgb(236, 71, 119);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(22, 22, 22);
+}
+
+footer {
+  position: relative;
+  clear: both;
+  margin: 0 auto 50px;
+  padding-bottom: 536px;
+  background: url(../images/adam.png) no-repeat right bottom, url(../images/tom.png) no-repeat left bottom;
+}
+
+h1 {
+  margin: 16px auto 0;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.38;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 46px;
+  font-weight: 100;
+  line-height: 1.38;
+}
+
+header {
+  margin: 32px auto 0;
+}
+
+input {
+  float: left;
+  clear: both;
+  width: 71.594%;
+  height: 34px;
+  padding: 7px 10px;
+  background: rgb(54, 54, 54);
+  color: rgb(236, 71, 119);
+  display: inline-block;
+  font-size: 13px;
+}
+
+section {
+  clear: both;
+}
+
+.small-headline {
+  font-weight: 600;
+  line-height: 1.38;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+/*** generic classes ***/
+
+.right {
+  float: right;
+  margin: 13px 1.2857142857142856% 0 0;
+}
+
+.alchemy {
+  width: 82.786%;
+  margin: 100px auto 0;
+}
+
+.alchemy .sub-block {
+  width: 100%;
+}
+
+.alchemy h3 {
+  color: rgb(255, 255, 255);
+}
+
+.alchemy-intro {
+  clear: both;
+  width: 100.086%;
+  margin: 0 auto;
+  padding-top: 334px;
+  background: url(../images/alchemy-logo-flat-big.png)  no-repeat center top, transparent;
+}
+
+.alchemy-intro h2 {
+  color: rgb(255, 255, 255);
+}
+
+.alchemy p {
+  margin: 20px auto;
+  width: 59.912%;
+}
+
+.dc {
+  position: absolute;
+  top: 374px;
+  left: 50%;
+  width: 160px;
+  margin-left: -80px;
+}
+
+.dc-flag {
+  width: 57px;
+  height: 33px;
+  margin: auto;
+}
+
+.flag-label {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(81, 81, 81);
+}
+
+.fluid {
+  margin: 52px auto 0;
+}
+
+.fluid h2 {
+  padding-bottom: 58px;
+  color: rgb(247, 222, 113);
+  border-bottom: 1px solid #222;
+}
+
+.fluid p {
+  margin: 25px auto 0;
+}
+
+.fluid-block {
+  float: left;
+  width: 49.008%;
+}
+
+.handle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.hero {
+  margin: 37px auto 0;
+  padding: 65px 0 715px 0;
+  background: url(../images/hero-2.png)  no-repeat center bottom, rgb(78, 169, 244);
+}
+
+.hero h2 {
+  color: rgb(255, 255, 255);
+}
+
+.hero p {
+  margin: 14px auto 0;
+  color: rgb(22, 22, 22);
+}
+
+.logo {
+  width: 196px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.more {
+  margin: 80px auto 0;
+  padding: 52px 0 151px 0;
+  background: rgb(236, 71, 119);
+}
+
+.more h2 {
+  padding-bottom: 58px;
+  color: rgb(22, 22, 22);
+  border-bottom: 1px solid rgba(34, 34, 34, .2);
+}
+
+.more h3 {
+  color: rgb(22, 22, 22);
+}
+
+.more p {
+  margin: 20px auto 0;
+  width: 59.912%;
+  color: rgb(22, 22, 22);
+}
+
+.tom {
+  float: left;
+  text-align: left;
+  margin: 380px 0 0 8.472222222222223%;
+}
+
+.adam {
+  float: right;
+  text-align: right;
+  margin: 380px 8.472222222222223% 0 0;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.sub-block {
+  clear: both;
+  margin: 80px auto 0;
+}
+
+.sub-block h3 {
+  margin: 0 auto;
+  font-weight: 600;
+  line-height: 1.38;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 16;
+  width: 100%;
+  min-width: 980px;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, .9);
+}
+
+.copyright {
+  float: left;
+  margin: 8px 0 0 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(91, 91, 91);
+}
+
+.notice {
+  float: right;
+  max-width: 360px;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: right;
+  color: rgb(91, 91, 91);
+}
+
+.sign-up {
+  float: right;
+  margin: 0 3% 0 1%;
+}
+
+.social {
+  float: left;
+  width: 120px;
+  margin-left: 3%;
+}
+
+.social a {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-left: 7px;
+}
+
+.social a,
+.email-field,
+.sign-up-button {
+  opacity: .8;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  transition: all .15s;
+}
+
+.social a:hover,
+.email-field:hover,
+.email-field:focus,
+.sign-up-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/*** unique classes ***/
+
+.interactivity {
+  margin: 90px 0 0 1.639344262295082%;
+  padding-bottom: 231px;
+  background: url(../images/interactive.png)  no-repeat center bottom;
+}
+
+.typography {
+  clear: both;
+  margin: 90px 0 0 0;
+  padding-bottom: 279px;
+  background: url(../images/type.png)  no-repeat center bottom;
+}
+
+.responsive {
+  margin: 70px 0 0 1.639344262295082%;
+  padding-bottom: 282px;
+  background: url(../images/responsive.png)  no-repeat center bottom;
+}
+
+.canvas {
+  margin: 70px 0 0 0;
+  padding-bottom: 282px;
+  background: url(../images/fluid-canvas.png)  no-repeat center bottom;
+}
+
+.hero-1 {
+}
+
+.name-1 {
+  float: right;
+  margin: 394px -4.928571428571429% 0 0;
+}
+
+.name-2 {
+  float: left;
+  clear: both;
+  margin: 394px 0 0 8.428571428571429%;
+}
+
+.style-guide {
+  padding-bottom: 835px;
+  background: url(../images/style-guide.png)  no-repeat center bottom;
+}
+
+.absolute {
+  padding-bottom: 480px;
+  background: url(../images/absolute-to-static.png)  no-repeat center bottom;
+}
+
+.consolidation {
+  padding-bottom: 454px;
+  background: url(../images/consolidation.png)  no-repeat center bottom;
+}
+
+.morphing {
+  width: 79.929%;
+  padding-bottom: 494px;
+  background: url(../images/morphing.png)  no-repeat center bottom;
+}
+
+.library {
+  width: 78.714%;
+  padding-bottom: 699px;
+  background: url(../images/library.png)  no-repeat center bottom;
+}
+
+.classes {
+  width: 81.429%;
+  padding-bottom: 692px;
+  background: url(../images/classes-dialog-transparent.png)  no-repeat center bottom, transparent;
+}
+
+
+
+
+@media(max-width: 640px) {
+  body {
+    min-width: auto;
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  header {
+    margin-top: 52px;
+  }
+
+  .hero {
+    margin-top: 67px;
+  }
+
+  .logo {
+    width: 392px;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding-bottom: 640px;
+    background-size: 95%;
+  }
+
+  .hero p,
+  .more p,
+  .alchemy p {
+    width: 95%;
+    margin-top: 35px;
+  }
+
+  .fluid-block {
+    float: none;
+    width: 100%;
+  }
+
+  .sub-block {
+    background-size: contain;
+  }
+
+  .style-guide {
+    padding-bottom: 655px;
+  }
+
+  .absolute {
+    padding-bottom: 750px;
+  }
+
+  .consolidation {
+    padding-bottom: 454px;
+  }
+
+  .morphing {
+    padding-bottom: 375px;
+  }
+
+  .library {
+    padding-bottom: 550px;
+  }
+
+  .classes {
+    padding-bottom: 540px;
+  }
+
+  .flag-label {
+    display: none;
+  }
+
+  .dc-flag {
+    width: 114px;
+    height: 66px;
+  }
+
+ .tom {
+    margin-top: 290px;
+    margin-left: 2.472222222222223%;
+  }
+
+  .adam {
+      margin-top: 290px;
+    margin-right: 2.472222222222223%;
+  }
+
+  .name {
+    font-size: 42px;
+  }
+
+  .handle {
+    font-size: 36px;
+  }
+
+  footer {
+    margin-bottom: 250px;
+  }
+
+  .sticky-bar {
+    min-width: auto;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .notice {
+    float: none;
+    font-size: 26px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .sign-up {
+    float: none;
+    width: 95%;
+    margin: auto;
+  }
+
+  input,
+  button {
+    height: 94px;
+    font-size: 26px;
+  }
+
+  .social {
+    float: none;
+    width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  .social a {
+    width: 64px;
+    height: 64px;
+    margin-left: 26px;
+  }
+}

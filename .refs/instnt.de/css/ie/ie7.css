@@ -1,0 +1,10 @@
+/* IE7 specific styles */
+#CASES li, #INSIGHTS li{
+	float: left;
+}
+#CASES ul, #INSIGHTS ul, #INSIGHTS h4{
+	clear: both;
+}
+.overlayDescription p, .blackBG  {
+  background-color:rgb(0, 0, 0);
+}

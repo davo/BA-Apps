@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=640">
+  <title>Macaw | The code-savvy web design tool.</title>
+  <script type="text/javascript" src="http://use.typekit.net/vsp8met.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/macaw.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="images/macaw-logo.png"></div>
+    <h1>The code-savvy web design tool</h1>
+  </header>
+  <section class="hero">
+    <h2 class="fluid-span-10">Stop writing code. Start drawing it.</h2>
+    <p class="fluid-span-6">Macaw provides the same flexibility as your favorite image editor but also writes semantic HTML and remarkably succinct CSS. It's time to expect more from a web design tool.</p>
+  </section>
+  <section class="fluid fluid-span-10 clearfix">
+    <h2>Built for today's web designer.</h2>
+    <div class="fluid-block canvas">
+      <h3 class="small-headline">Fluid canvas and grid</h3>
+      <p>Macaw is engineered for fluid widths. Resize the canvas and your grids and elements will update accordingly.</p>
+    </div>
+    <div class="fluid-block responsive">
+      <h3 class="small-headline">Responsive Breakpoints</h3>
+      <p>Designing for different device sizes is tricky. Macaw lets you define arbitrary breakpoints and tweak properties for that specific width.</p>
+    </div>
+    <div class="fluid-block typography">
+      <h3 class="small-headline">Rich Typography</h3>
+      <p>In addition to a full library of web fonts and rich-text editing, Macaw provides you with useful calculations like characters per line.</p>
+    </div>
+    <div class="fluid-block interactivity">
+      <h3 class="small-headline">Interactivity</h3>
+      <p>Building clickable prototypes in Macaw is as easy as clicking on a target, but it doesn't stop there. You can also add more dynamic interactions with the scripting palette. Macaw will even autogenerate templates and jQuery variables for you.</p>
+    </div>
+  </section>
+  <section class="more">
+    <h2 class="fluid-span-10">Design more with less.</h2>
+    <div class="sub-block classes">
+      <h3 class="small-headline">Global Classes</h3>
+      <p>Macaw lets you save common styles so that you can quickly apply them to elements across your document. Once applied, you can update all of the elements at once with the class editor.</p>
+    </div>
+    <div class="sub-block library">
+      <h3 class="small-headline">reusable components and assets</h3>
+      <p>Have a complex element that you need to use on multiple pages? With Macaw you can store it in your library as a component and drag it on to any other page in your project. Edit it in one spot and all other instances will be automatically updated.</p>
+    </div>
+    <div class="sub-block morphing">
+      <h3 class="small-headline">Morphing</h3>
+      <p>Wouldn't it be nice if you could convert a wireframe into a full-blown mockup? With Macaw you can. Macaw is built on a flexible, component-based architecture which allows elements to be morphed into different things. For example, you can morph a static wireframe video element into an actual YouTube video.</p>
+    </div>
+  </section>
+  <section class="alchemy">
+    <div class="alchemy-intro">
+      <h2>The engine that learns as you design.</h2>
+      <p>We wanted Macaw to write code you'd be proud enough to hand to developers. Current applications rely on trendy frameworks, export rigid positioning and generate ridiculous IDs. We think designers and developers deserve better. Macaw's powerful, patent-pending engine is called Alchemy and it can do some incredible things.</p>
+    </div>
+    <div class="sub-block consolidation">
+      <h3 class="small-headline">Consolidation</h3>
+      <p>Alchemy analyzes every possible selector to describe your document and determines the most succinct way of using them based on logical criteria: applicability, specificity and semantics.</p>
+    </div>
+    <div class="sub-block absolute">
+      <h3 class="small-headline">Absolute to Static Conversion</h3>
+      <p>Macaw offers designers the freedom of absolute positioning within the interface but will convert to a static document flow upon export by calculating the necessary margins, padding, floats and clears. It's the best of both worlds.</p>
+    </div>
+    <div class="sub-block style-guide">
+      <h3 class="small-headline">Style Guides</h3>
+      <p>Designing for the web requires more than mockups. It requires thorough design systems that can be implemented in a modular fashion. Macaw helps you abstract the finer details of your project by automatically generating a style guide. Macaw style guides outline the typography, colors, grids, classes and other components used throughout your project so that you, your client and your developer are always on the same page.</p>
+    </div>
+  </section>
+  <footer>
+    <div class="tom fluid-span-3">
+      <div class="name">Tom Giannattasio</div>
+      <a href="http://twitter.com/attasi" class="handle">@attasi</a>
+    </div>
+    <div class="adam fluid-span-3">
+      <div class="name">Adam Christ</div>
+      <a href="http://twitter.com/gesusc" class="handle">@gesusc</a>
+    </div>
+    <div class="dc">
+      <div class="dc-flag"><img src="images/dc-flag.svg"></div>
+      <div class="flag-label">Proudly built in DC<br>by these two fellas</div>
+    </div>
+  </footer>
+  <div class="sticky-bar">
+    <div class="social clearfix">
+      <a class="twitter" href="http://twitter.com/macawco"><img src="images/twitter-icon.png"></a>
+      <a class="facebook" href="http://facebook.com/macawco"><img src="images/facebook-icon.png"></a>
+      <a class="email" href="mailto:hello@macaw.co"><img src="images/email-icon.png"></a>
+    </div>
+    <div class="copyright">© 2013 Macaw, LLC</div>
+    
+    <form class="sign-up fluid-span-4 clearfix" id="signup" action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
+      <input class="email-field" type="text" id="email" placeholder="your email">
+      <button class="sign-up-button">sign up</button>
+    </form>
+    <div id="response" class="notice">Coming soon to the App Store! Want updates?<? require_once('inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></div>
+  </div>
+
+  <script src="js/jquery-min.js"></script>
+  <script src="js/macaw.js"></script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38472771-1']);
+    _gaq.push(['_setDomainName', 'macaw.co']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
+
+
+
+<!-- Localized -->
