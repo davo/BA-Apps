@@ -1,0 +1,63 @@
+.start {
+  background-position: center -40px;
+}
+
+#view-work {
+  margin-bottom: 0;
+  top: -12px;
+}
+
+.process-step .content p {
+  margin-bottom: 1em;
+}
+
+.bg-image {
+  z-index: 1;
+}
+
+.process-steps .content {
+  position: relative;
+  z-index: 2;
+}
+
+.form input {
+  height: auto;
+}
+
+.slide-nav {
+  margin-top: 8px;
+}
+
+.source {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.inspiration {
+  background-position: center center;
+  min-height: 800px !important;
+  padding: 0 !important;
+}
+
+.bg-image {
+  display: none;
+}
+
+label.enhanced {
+  top: 18px !important;
+}
+
+.slider .flex-next {
+    background: transparent url(../images/arrow-right.png) no-repeat 0 0;
+}
+
+.slider .flex-prev {
+    background: transparent url(../images/arrow-left.png) no-repeat 0 0;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 957px) {
+  .pane:first-child + .pane + .pane + .pane, .project:first-child + .project + .project, .project:first-child + .project + .project + .project + .project  {
+     clear: both;
+  }​
+}
+

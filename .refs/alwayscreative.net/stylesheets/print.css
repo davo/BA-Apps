@@ -1,0 +1,92 @@
+body {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+
+@page {
+  margin: 1.75cm 1cm;
+}
+
+.page {
+  width: 100%;
+}
+
+#ac-svg {
+  display: none;
+}
+
+.required {
+  float: left;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  page-break-inside: avoid;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 span {
+  display: block;
+  font-size: 14pt;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.question {
+  margin-bottom: 10px;
+  page-break-inside: avoid;
+}
+
+.question input {
+  border: 1px solid black;
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+.question textarea {
+  border: 1px solid black;
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+
+.radios li, .checkboxes li {
+  clear: both;
+}
+
+.radios input, .checkboxes input {
+  float: left;
+  margin-top: 0;
+  width: 20px;
+}
+
+.submit, .identity {
+  display: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+input::-webkit-input-placeholder {
+  display: none;
+}
+input:-moz-placeholder {
+  display: none;
+}
+.progress-area {
+    display: none;
+}

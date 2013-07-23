@@ -1,0 +1,49 @@
+html.no-js body {
+  background: #000;
+}
+body, body.loading {
+  background-image: none;
+  padding-top: 36px;
+}
+#universe, .process .slides li, .outer-slides .inner-slide, .piece, #request-form {
+  display: block;
+}
+.gen-next, .process-menu, .trig-next, .trig-prev, .slide-nav, .port-nav, .close-window, .slider .flex-next, .slider .flex-prev, #request-trigger {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .section-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+}
+.process {
+  padding-top: 140px !important;
+}
+.inspiration {
+  background-size: cover;
+}
+.portfolio-window {
+  left: 0;
+  overflow: hidden;
+  position: static;
+  visibility: visible;
+}
+.form .submit {
+  border: 1px solid #303030;
+  color: #797979;
+}
+.form-field label {
+  display: block;
+}
+.bg-image {
+  display: none;
+}
+.no-js .portfolio-images {
+  display: none;
+}
+#portfolio-content {
+  opacity: 1;
+  visibility: visible;
+}
