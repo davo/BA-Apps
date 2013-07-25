@@ -55,16 +55,11 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px transparent;
+  overflow: hidden;
 }
 .center {
   margin: 0 auto;
   width: 960px;
-}
-.container {
-  max-width: 1170px;
-  padding: 0 20px;
-  margin: 0 auto;
-  overflow: hidden;
 }
 header {
   display: none;
@@ -115,104 +110,18 @@ header .small {
 header .small ul li a {
   padding: 23px 10px;
 }
-/* portfolio */
-#portfolio {
-  overflow: hidden;
-  font-family: 'TitilliumText';
-  background: #0e0d0c;
+section {
+  display: block;
+  padding-top: 50px;
 }
-#portfolio .inside {
-  position: relative;
-}
-#portfolio .info {
-  padding: 10px 55px;
-}
-#portfolio .nav {
-  text-align: center;
-  margin-top: 10px;
-  position: relative;
-  z-index: 2;
-}
-#portfolio .nav .arrow {
-  z-index: 5;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 40px;
-  border: 2px solid #FFF;
-  background: #272423 center center repeat-x;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.5);
-}
-#portfolio .nav .arrow:hover {
-  background-color: #bf381d;
-}
-#portfolio .nav .arrow.prev:hover {
-  background-position: -80px center;
-}
-#portfolio .nav .arrow.next:hover {
-  background-position: 80px center;
-}
-#portfolio ul {
-  margin: 0;
-  position: relative;
-  width: 100000px;
-}
-#portfolio ul li {
+article {
+  margin: 0 auto;
   float: left;
-  text-align: center;
-  position: relative;
-  width: 600px;
-  height: 400px;
-  max-width: 100%;
-  overflow: hidden;
-  margin: 10px;
-  opacity: .25;
-  bottom: 0;
-}
-#portfolio ul li:first-child {
-  margin-left: 180px;
-}
-#portfolio ul li a {
-  display: block;
-  overflow: hidden;
-  border-bottom: none;
-}
-#portfolio ul li a img {
-  display: block;
+  clear: both;
   width: 100%;
   height: 100%;
-  position: relative;
-  top: 0;
-}
-#portfolio ul li a .desc strong {
-  font-size: 16px;
-  font-family: 'TitilliumText';
-  display: block;
-  opacity: .99;
-}
-#portfolio ul li a .desc small {
-  display: block;
-  opacity: .5;
-}
-#portfolio ul li:hover {
-  opacity: .75;
-}
-#portfolio ul li.active {
-  opacity: 1;
-}
-#portfolio ul li.active a img {
-  top: -40px;
-}
-#portfolio ul li.active a .desc {
-  opacity: 1;
-  bottom: 0;
-}
-#portfolio ul li.hide {
-  opacity: 0;
-  position: relative;
-  bottom: -25px;
+  min-height: 670px;
+  overflow: auto;
 }
 /*
  * HTML5 Boilerplate

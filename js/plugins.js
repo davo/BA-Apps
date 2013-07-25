@@ -21,4 +21,11 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+$('#ascensor').ascensor({
+    childType: 'section',
+    ascensorFloorName: ['Home','Segundo'],
+    time: 1000,
+    direction: "y",
+    keyNavigation: true,
+    overflow:"hidden"
+  })
