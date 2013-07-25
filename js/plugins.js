@@ -21,17 +21,27 @@
     }
 }());
 
+
 $('#ascensor').ascensor({
     ascensorName:'ascensor',
     childType: 'section',
     ascensorFloorName: ['buenos-aires-apps','como-participar','criterio-de-evaluacion'],
-    time: 500,
+    time: 1500,
+    // direction: "chocolate",
+    // ascensorMap: [[0,0],[1,0],[1,1]],
     direction: "y",
     keyNavigation: true,
     overflow:"hidden",
     easing: "easeInOutQuint",
-    queued: false
+    queued: true,
+    queuedDirection: 'y'
   })
+
+$(window).bind('resize', function () { 
+
+
+
+});
 
 /*function handleHammer(ev) {
     console.log(ev);
