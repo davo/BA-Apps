@@ -22,10 +22,34 @@
 }());
 
 $('#ascensor').ascensor({
+    ascensorName:'ascensor',
     childType: 'section',
-    ascensorFloorName: ['Home','Segundo'],
-    time: 1000,
+    ascensorFloorName: ['buenos-aires-apps','como-participar','criterio-de-evaluacion'],
+    time: 500,
     direction: "y",
     keyNavigation: true,
-    overflow:"hidden"
+    overflow:"hidden",
+    easing: "easeInOutQuint",
+    queued: false
   })
+
+/*function handleHammer(ev) {
+    console.log(ev);
+    // disable browser scrolling
+    //ev.gesture.preventDefault();
+
+    switch(ev.type) {
+
+        case 'swipeup':
+            this.next();
+            ev.gesture.stopDetect();
+            break;
+
+        case 'swipedown':
+            this.prev();
+            ev.gesture.stopDetect();
+            break;
+        
+    }
+}
+$('#ascensor').hammer().on("swipeup swipedown", handleHammer);*/
