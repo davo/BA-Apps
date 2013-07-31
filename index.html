@@ -30,26 +30,30 @@
 
 
 
-<!--     <header>
-      <div class="center">
-        <div class="container">
-          <h2><a href="/">BA Apps</a></h2>
-          <nav>
-            <ul class="nav">
-              <li><a href="">Cómo participar</a></li>
-              <li><a href="">Criterio de evaluación</a></li>
-              <li><a href="">Desafíos</a></li>
-              <li><a href="">Premios</a></li>
-              <li><a href="">Quienes nos ayudan</a></li>
-              <li><a href="">Bases del concurso</a></li>
-              <li><a href="">Cronograma</a></li>
-              <li><a href="">FAQ</a></li>
-            </ul>
-          </nav>
+    <header>
+      <div class="navbar-fixed-top">
+
+        <div class="header-gcba">
+          <div class="header-inner">
+            <div class="container">
+              <a href="http://buenosaires.gob.ar" target="_blank"><div class="logo"></div></a>
+              <h2 class="slogan">En todo estás vos</h2>
+            </div>
+          </div>
         </div>
+
+        <div class="container">
+          <div class="row-fluid">
+            <div class="span6 logo-apps">
+                <h1>Buenos Aires Apps</h1>
+            </div>
+            <div class="span6"></div>
+          </div>
+        </div>
+
       </div>
     </header>
- -->
+
 
 <!-- <header>
 
@@ -72,60 +76,48 @@
 
 
 
-      <section class="bg-image home">
+      <section class="bg-image home" data-scroll-index='0'>
         <div class="container">
 
         <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line"></div>
+        <div class="bg-phone-line-one"></div>
+        <div class="bg-phone-line-two"></div>
           <article class="row">
-              <div class="page-header">
-                <h1>Buenos Aires Apps</h1>
+<!--               <div class="page-header">
+                <h2>Buenos Aires Apps</h2>
               </div>
-                <p>Buenos Aires Apps es el concurso anual que busca celebrar el talento y la garra de los porteños para poner la tecnología y la información al servicio de la transformación de nuestras ciudades.</p>
+                <p>Buenos Aires Apps es el concurso anual que busca celebrar el talento y la garra de los porteños para poner la tecnología y la información al servicio de la transformación de nuestras ciudades.</p> -->
           </article>
         </div>
       </section>
-    
-      <section class="container">
-        <article class="row">
-            <div class="titulo">
-              <h1>Cómo participar</h1>
-            </div>
-            <div class="resumen">
-              <p>Buenos Aires Apps es el concurso anual que busca celebrar el talento y la garra de los porteños para poner la tecnología y la información al servicio de la transformación de nuestras ciudades.</p>
-            </div>
-        </article>
-      </section>
 
-      <section class="container">
-        <article class="row">
-            <div class="titulo">
-              <h1>Criterio de evaluación</h1>
-            </div>
-            <div class="resumen">
-              <p>Buenos Aires Apps es el concurso anual que busca celebrar el talento y la garra de los porteños para poner la tecnología y la información al servicio de la transformación de nuestras ciudades.</p>
-            </div>
-        </article>
-      </section>
 
         
 
         
         <!--script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script-->
         
-        <script src="js/jquery.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
        
-        <!-- script src="js/jquery.min.js"></script -->
         
 
+        <script src="/js/TweenMax.min.js"></script>
+        <script src="/js/jquery.gsap.min.js"></script>
+        <script src="/js/scrollIt.min.js"></script>
+        <script>$(function() { $.scrollIt(); });</script>
+        <!--script src="/js/skrollr.min.js"></script>
         
+        <script type="text/javascript">
+              var s = skrollr.init({
+                edgeStrategy: 'set'
+              });
+        </script-->
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.1/TweenMax.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.1/jquery.gsap.min.js"></script>
         <!-- 
         <script src="js/jquery.hammer.min.js"></script>
         <script src="js/main.js"></script>
-         -->  
+         -->
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
