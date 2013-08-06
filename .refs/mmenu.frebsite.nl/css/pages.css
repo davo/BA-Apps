@@ -1,0 +1,75 @@
+/*
+	General
+*/
+body
+{
+	background: #1ab8d3;
+}
+.section
+{
+	width: 600px;
+	min-height: 500px;
+	margin: auto;
+}
+.section h1,
+.section h2,
+.section h3
+{
+	margin-top: 100px;
+}
+
+/*
+	Download
+*/
+#download
+{
+	color: #fff;
+}
+#download h1
+{
+	background-position: 0 -1080px;
+	height: 140px;
+}
+#download p,
+#download li
+{
+	font-weight: normal;
+}
+#donate
+{
+	padding: 20px 64px;
+	margin: 40px -64px;	
+}
+#donate form
+{
+	margin-top: 0;
+}
+#donate p
+{
+	font-size: 16px;
+	width: 480px;
+	margin-top: 4px;
+}
+
+.ad_728x90
+{
+	width: 728px;
+	height: 90px;
+	margin: 0 0 40px -64px;
+}
+
+/*
+	Changelog
+*/
+#changelog
+{
+	color: #fff;
+}
+#changelog h3
+{
+	background-position: 0 -875px;
+}
+#changelog h3 + ul > li + li
+{
+	margin-top: 20px;
+}

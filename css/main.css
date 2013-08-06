@@ -105,8 +105,17 @@ header .logo-apps h1 {
   height: 144px;
   background-image: url(/img/logo-apps.png);
 }
+#page section.home {
+  background-color: #CECECE;
+}
+#page section.about {
+  background-color: #032ea7;
+}
+#page section.join {
+  background-color: #cecece;
+}
 section {
-  padding-top: 20px;
+  padding-top: 0px;
   height: 1000px;
   width: 100%;
 }
@@ -124,7 +133,6 @@ section {
 }
 section.home {
   background-image: url(/img/home_bkg.png);
-  background-color: #CECECE;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -159,6 +167,32 @@ section.home {
 }
 .bg-phone-pat {
   background: url(/img/home_movil_diag_pat.png) no-repeat center center;
+}
+section.about {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.join {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.prizes {
+  background-color: #211c6d;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.timeline {
+  background-color: #032ea7;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /*
  * HTML5 Boilerplate
@@ -323,17 +357,25 @@ textarea {
   *zoom: 1;
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  header {
+    padding-bottom: 40px;
+  }
+  header .header-gcba {
+    height: 40px;
+    padding: 3px 0;
+  }
   header .header-gcba .logo {
-    width: 78px;
-    height: 32px;
-    background: url(/img/logo-normal-2x-portrait.png);
-    background-position: center center;
-    background-size: cover;
-    margin-left: 5px;
+    width: 172px;
+    height: 33px;
+    background: url(/img/logo-normal-2x-landscape.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-left: 7px;
   }
   header .header-gcba h2.slogan {
-    font-size: 13px;
-    margin-top: 8px;
+    font-size: 8px;
+    margin-top: 13px;
     letter-spacing: -1px;
     margin-right: 5px;
   }
@@ -347,36 +389,110 @@ textarea {
     background-image: url(/img/logo-apps-2x.png);
     background-position: center center;
     background-size: cover;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 7px;
+  }
+  section {
+    height: 600px;
+  }
+  section.home {
+    width: 100%;
+    background-position: center -230px;
+    background-size: 480%;
+    background-repeat: no-repeat;
+  }
+  .bg-phone-pat {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 200px;
+    height: 266px;
+    z-index: 500;
+    background-size: cover;
+  }
+  .bg-phone-line-one {
+    margin-left: 68px;
+    margin-top: 140px;
+    width: 184px;
+    height: 259px;
+    z-index: 500;
+    background-size: cover;
+  }
+  .bg-phone-line-two {
+    margin-left: 56px;
+    margin-top: 107px;
+    width: 202px;
+    height: 259px;
+    z-index: 500;
+    background-size: cover;
   }
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header {
+    padding-bottom: 40px;
+  }
+  header .header-gcba {
+    height: 40px;
+    padding: 3px 0;
+  }
   header .header-gcba .logo {
     width: 172px;
     height: 33px;
     background: url(/img/logo-normal-2x-landscape.png);
-    background-position: center center;
-    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 70%;
     margin-left: 7px;
   }
   header .header-gcba h2.slogan {
-    font-size: 13px;
-    margin-top: 8px;
+    font-size: 8px;
+    margin-top: 13px;
     letter-spacing: -1px;
-    margin-right: 7px;
+    margin-right: 5px;
   }
   header .logo-apps h1 {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block;
-    width: 172px;
-    height: 108px;
+    width: 165px;
+    height: 104px;
     background-image: url(/img/logo-apps-2x.png);
     background-position: center center;
     background-size: cover;
     margin-left: 20px;
+  }
+  section {
+    height: 600px;
+  }
+  section.home {
+    width: 100%;
+    background-position: center -230px;
+    background-size: 350%;
+    background-repeat: no-repeat;
+  }
+  .bg-phone-pat {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 200px;
+    height: 266px;
+    z-index: 500;
+    background-size: cover;
+  }
+  .bg-phone-line-one {
+    margin-left: 68px;
+    margin-top: 140px;
+    width: 184px;
+    height: 259px;
+    z-index: 500;
+    background-size: cover;
+  }
+  .bg-phone-line-two {
+    margin-left: 56px;
+    margin-top: 107px;
+    width: 202px;
+    height: 259px;
+    z-index: 500;
+    background-size: cover;
   }
 }
 @media all and (max-device-width: 480px) and (orientation: portrait) {

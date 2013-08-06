@@ -1,0 +1,549 @@
+@import "lesshat";
+
+// Fix slow transformations in iOS, Webkit
+// fixes by Davo
+
+
+html {
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Museo 700';
+    src: url('/fonts/museo_slab_700-webfont.eot');
+    src: url('/fonts/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/museo_slab_700-webfont.woff') format('woff'),
+         url('/fonts/museo_slab_700-webfont.ttf') format('truetype'),
+         url('/fonts/museo_slab_700-webfont.svg#museo_slab700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo 900';
+    src: url('/fonts/museo_slab_900-webfont.eot');
+    src: url('/fonts/museo_slab_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/museo_slab_900-webfont.woff') format('woff'),
+         url('/fonts/museo_slab_900-webfont.ttf') format('truetype'),
+         url('/fonts/museo_slab_900-webfont.svg#museo_slab900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background-color: #CECECE;
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+// ::-webkit-scrollbar-thumb:vertical{width:10px;height:10px;background-color:#535353}
+// ::-webkit-scrollbar{width:10px;height:5px;background:#000;margin-right:5px}
+
+::-moz-selection { color: gold;  background: red; }
+::selection      { color: gold;  background: red; } 
+
+@font-face{
+    font-family:'Gotham';
+    src:url('/fonts/gotham.eot');
+    src:url('/fonts/gotham.eot?#iefix') format('embedded-opentype'),url('/fonts/gotham.woff') format('woff'),url('/fonts/gotham.ttf') format('truetype'),url('/fonts/gotham.svg#Gotham-Medium') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+
+
+header {
+    padding-bottom: 52px;
+
+
+    .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    margin-bottom: 0
+    }
+
+    .header-gcba {
+        padding:10px 0;
+        overflow:visible;
+        background-color:#f9dd00;
+        *background-color:#ffbd04;
+        background-image:-o-linear-gradient(top,#ffe603,#ffbd04);
+        background-image:linear-gradient(top,#ffe603,#ffbd04);
+        background-image:-ms-linear-gradient(top,#ffe603,#ffbd04);
+        background-image:-webkit-linear-gradient(top,#ffe603,#ffbd04);
+        background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffe603),to(#ffbd04));
+        background-image:-moz-linear-gradient(top,#ffe603,#ffbd04);
+        background-repeat:repeat-x;
+        border-top:1px solid #fdfd00;
+        border-bottom:1px solid #ffc702;
+        filter:progid:dximagetransform.microsoft.gradient(enabled=false);
+        filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffe603',endColorstr='#ffbd04',GradientType=0);
+        box-shadow:0 0 10px rgba(0,0,0,.7);
+    
+        &:hover,
+        &:active,
+        &.active,
+        &.disabled,
+        &[disabled] {
+            background-color:#ffbd04;
+            *background-color:#d6be00
+        }
+
+        &:active,&.active {
+            background-color:#bda700
+        }
+        
+        & .container {
+            .opacity(0.7);
+        }
+
+        & .logo {
+            float:left;
+            width:172px;
+            height:33px;
+            background:url(/img/logo-normal.png);
+            
+        }
+
+        & h2.slogan {
+            font-family:"Gotham","Helvetica Neue","Helvetica",sans-serif;
+            float:right;
+            font-size:15px;
+            margin-top: 10px;
+            letter-spacing:-1px;
+            line-height: 12px !important;
+            color:#000;
+            font-weight: bold;
+        }
+    }
+
+    .logo-apps h1 {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+    }
+
+}
+
+#page {
+    section {
+        &.home {
+                background-color: #CECECE;
+            }
+        &.about {
+                background-color: #032ea7;
+            }
+        &.join {
+                background-color: #cecece;
+            }
+        }
+
+}
+
+
+section {
+  padding-top: 0px;
+  height: 750px;
+  width: 100%;
+}
+
+.bg-image {
+  /* default background-position */
+  background-position: center center;
+  /* lt ie 8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  /* scale proportionately */
+  background-size: auto;
+}
+
+section.home {
+    // background-image: url(/img/betahome.png);
+    // position: relative;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // box-sizing: border-box;
+    // background-repeat: no-repeat;
+}
+
+.circle-grid {
+    padding: 30px 0px;
+
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.circle-grid:after,
+.circle-item:before {
+    content: '';
+    display: table;
+}
+
+.circle-grid:after {
+    clear: both;
+}
+
+.circle-grid li {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+.circle-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    // box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: default;
+}
+
+.circle-info-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -o-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: rgba(206,206,206,0.96);
+    box-shadow: 
+        0 0 0 20px rgba(255,255,255,0.2), 
+        inset 0 0 3px rgba(122,122, 122, 0.8);
+
+}
+
+.circle-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+        
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+.circle-info > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-position: center center;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.circle-info .circle-info-back {
+    -webkit-transform: rotate3d(0,1,0,180deg);
+    -moz-transform: rotate3d(0,1,0,180deg);
+    -o-transform: rotate3d(0,1,0,180deg);
+    -ms-transform: rotate3d(0,1,0,180deg);
+    transform: rotate3d(0,1,0,180deg);
+    
+    background: #cecece;
+    border: 2px #df03ed solid;
+}
+
+.circle-img { 
+    background-image: url(/img/betahome.png);
+}
+
+
+.circle-info {
+
+}
+
+.circle-info p {
+    text-align: center;
+    display: block;
+    margin-top: 190px;
+    margin-left: 20px;
+    font-family: "Museo 700", "Helvetica", sans;
+    line-height: 40px;
+    color: #df03ed;
+    padding: 10px 5px;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 450px;
+    -webkit-transform: rotate(355deg);
+    -moz-transform: rotate(355deg);
+    -o-transform: rotate(355deg);
+    writing-mode: lr-tb;
+    letter-spacing: -2px;
+}
+
+
+.circle-info p a {
+    color: #fff;
+    text-decoration:underline;
+}
+
+.circle-info p a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.circle-item:hover .circle-info-wrap {
+    box-shadow: 
+        0 0 0 0 rgba(255,255,255,0.8), 
+        inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.circle-item:hover .circle-info {
+    -webkit-transform: rotate3d(0,1,0,-180deg);
+    -moz-transform: rotate3d(0,1,0,-180deg);
+    -o-transform: rotate3d(0,1,0,-180deg);
+    -ms-transform: rotate3d(0,1,0,-180deg);
+    transform: rotate3d(0,1,0,-180deg);
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

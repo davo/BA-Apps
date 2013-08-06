@@ -1,0 +1,80 @@
+/*
+	Customize
+*/
+#questions,
+#code
+{
+	color: #666;
+}
+#content .invalid
+{
+	border-color: #d00 !important;
+}
+
+
+#questions > div > div
+{
+	display: none;
+	padding: 10px 0;
+}
+#questions > div > input:checked ~ div
+{
+	display: block;
+}
+
+#questions .q,
+#questions .a
+{
+	margin: 0;
+}
+#questions .q
+{
+	font-style: italic;
+	padding: 10px 0;
+}
+#questions .a
+{
+	padding: 10px 20px;
+}
+#questions .a + .a
+{
+	border-top: 1px solid #ddd;
+}
+#questions .a input,
+#questions .a label
+{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#questions .a input[type="text"]
+{
+	border: 1px solid #999;
+	padding: 5px;
+}
+#bg_color_dark
+{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+#bg_color_dark + label
+{
+	padding-top: 15px;
+}
+#color_preview
+{
+	background-color: #333;
+	vertical-align: middle;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 30px;
+}
+
+pre#code
+{
+	background: #555;
+	color: #fff;
+	padding: 20px;
+	margin: 0 -20px -20px -20px;
+	overflow: auto;
+}

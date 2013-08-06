@@ -1,1 +1,271 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta charset="utf-8">
+	<meta name="keywords" content="" >
+	<meta name="description" content="Designer, Front-End Developer, Back-End Developer from Istanbul TURKEY" >
+	<meta property="og:title" content="Idea 2 Life Converter" />
+	<meta property="og:url" content="http://www.ahmetsulek.com/?utm_source=facebook+og"/>
+	<meta property="og:image" content="http://ahmetsulek.com/img/image-facebook.png"/>
+	<title>Ahmet Sülek Front-End Developer Istanbul TURKEY</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+	<link id="favicon" rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone4.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad3.png" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style-1374509929.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+</head>
+<body>
+	<header>
+		<div class="top_bar">
+		</div>
+		<div class="menu_holder web">
+			<ul class="menu">
+				<li><a class="ascensorLink ascensorLink0" href="javascript:;">HOME</a></li>
+				<li><a class="ascensorLink ascensorLink1" href="javascript:;">ABOUT</a></li>
+				<li><a class="ascensorLink ascensorLink2" href="javascript:;">WORK</a></li>
+				<li><a class="ascensorLink ascensorLink3" href="javascript:;">CONNECT</a></li>
+			</ul>
+		</div>
+		<a href="javascript:;" id="menu_button" class="mobile"></a>
+		<div id="logo">
+			<div class="rel">
+				<div class="bg">f</div>
+				<div class="top">s</div>
+				<div class="bottom">d</div>
+			</div>
+		</div>
+	</header>
+	<section class="loading">
+		
+	</section>
+	
+	<div id="ascensor">
+	<!-- START OF HOME -->
+	<section class="home">
+		<article class="container">
+		<div class="slogan mobile">
+			<h1>
+				HELLO, I'M AHMET SÜLEK
+			</h1>
+			<h2>
+				AN EXPERIENCED <br/>IDEA TO LIFE CONVERTER<br/> FROM ISTANBUL
+			</h2>
+		</div>
+		<div class="slogan web">
+			<h1>
+				HELLO, I'M AHMET SÜLEK
+			</h1>
+			<h2 class="web">
+				<span>AN&nbsp;</span>
+				<span>EXPERIENCED</span>
+				<span class="spacer2"></span>
+				<span class="idea2life">IDEA TO LIFE</span>
+				<span class="spacer"></span>
+				<span>CONVERTER FROM ISTANBUL</span>
+			</h2>
+			<h2 class="mobile">
+				AN EXPERIENCED IDEA TO LIFE CONVERTER FROM ISTANBUL
+			</h2>
+			<span class="arrow">g</span>
+			<span class="what">what is that?</span>
+		</div>
+		</article>
+	</section>
+	<!-- END OF HOME -->
+	
+	<!-- START OF ABOUT -->
+	<section class="about">
+		<article class="container">
+		<div class="design about_column">
+			<h2>j</h2>
+			<h1>DESIGNER</h2>
+		</div>
+		<div class="info about_column">
+			<p>
+				Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper.
+				<br><br>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+				<br><br>
+				Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.
+			</p>
+		</div>
+		<div class="development about_column">
+			<h2>k</h2>
+			<h1>DEVELOPER</h2>
+		</div>
+		</article>
+	</section>
+	<!-- END OF ABOUT -->
+	
+	<!-- START OF WORK -->
+	<section class="work">
+		<article class="container">
+		<ul>
+			<li>
+				<a href="http://burcusulek.com/">
+					<img src="img/media/ss1.png" alt="ss1" width="290" height="170">
+					<h3>Burcu Sülek</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://prisync.com/">
+					<img src="img/media/ss2.png" alt="ss1" width="290" height="170">
+					<h3>Prisync</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://flatuicolors.com/">
+					<img src="img/media/flatuicolors.png" alt="ss1" width="290" height="170">
+					<h3>Flat UI Colors</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://dribbble.com/shots/1021755-Flat-UI-Terminal-Theme?list=users">
+					<img src="img/media/flatterminal.png" alt="ss1" width="290" height="170">
+					<h3>Flat UI Terminal</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://pillter.com/welcome">
+					<img src="img/media/pillter.png" alt="ss1" width="290" height="170">
+					<h3>Pillter</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://banadediki.com/limbo/index">
+					<img src="img/media/banadediki.png" alt="ss1" width="290" height="170">
+					<h3>Banadediki</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://wordsoverpixels.com/">
+					<img src="img/media/wop.png" alt="ss1" width="290" height="170">
+					<h3>Words Over Pixels</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://prvktr.com/justtype.it">
+					<img src="img/media/justtypeit.png" alt="ss1" width="290" height="170">
+					<h3>Just Type It</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.omybag.co/">
+					<img src="img/media/omybag.png" alt="ss1" width="290" height="170">
+					<h3>O MY BAG</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.aeropostale.com.tr/">
+					<img src="img/media/aeropostale.png" alt="ss1" width="290" height="170">
+					<h3>AEROPOSTALE</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://insankaynaklari.com">
+					<img src="img/media/insankaynaklari.png" alt="ss1" width="290" height="170">
+					<h3>insankaynaklari.com</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://evimizkocaeli.com/">
+					<img src="img/media/evimizkocaeli.png" alt="ss1" width="290" height="170">
+					<h3>Evimiz Kocaeli</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://trideer.com/">
+					<img src="img/media/trideer.png" alt="ss1" width="290" height="170">
+					<h3>Trideer</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://thehallinteriors.co.uk/">
+					<img src="img/media/thehall.png" alt="ss1" width="290" height="170">
+					<h3>The HALL</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.kaledos.com.tr/">
+					<img src="img/media/kaledos.png" alt="ss1" width="290" height="170">
+					<h3>KALEDOS EVLERI</h3>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.studyo24.com/">
+					<img src="img/media/studyo24.png" alt="ss1" width="290" height="170">
+					<h3>STUDYO24</h3>
+				</a>
+			</li>
+		</ul>
+		</article>
+	</section>
+	<!-- END OF WORK -->
+	
+	<!-- START OF CONTACT -->
+	<section class="contact">
+		<article class="container">
+		<ul class="icons">
+			<li>
+				<a href="https://www.facebook.com/ahmetsulek" target="_blank" class="facebook"></a>
+			</li>
+			<li>
+				<a href="https://www.dribbble.com/ahmetsulek" target="_blank" class="dribbble"></a>
+			</li>
+			<li>
+				<a href="http://linkedin.com/in/ahmetsulek" target="_blank" class="linkedin"></a>
+			</li>
+			<li>
+				<a href="https://www.twitter.com/ahmetsulek" target="_blank" class="twitter"></a>
+			</li>
+			<li>
+				<a href="http://www.instagram.com/ahmetsulek" target="_blank" class="instagram"></a>
+			</li>
+			<li>
+				<a href="http://www.last.fm/user/toshieee" target="_blank" class="lastfm"></a>
+			</li>
+			<li>
+				<p>
+					or drop me a line <a href="mailto:ahmetsulek@gmail.com">ahmetsulek@gmail.com</a>
+				</p>
+			</li>
+		</ul>
+		</article>
+	</section>
+	<!-- END OF CONTACT -->
+	</div>
+	<!-- END OF ASCENSOR -->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/2.2.0/conditionizr.min.js" ></script>
+	
+	<script type="text/javascript" src="js/plugins/jquery.lettering.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.textillate.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.ascensor.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-12208653-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</body>
+</html>
+<!-- Localized -->
