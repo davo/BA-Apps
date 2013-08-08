@@ -783,3 +783,56 @@ pre
 {
 	padding: 20px;
 }
+
+
+#intro,
+			#first,
+			#second,
+			#third
+			{
+				height: 400px;
+			}
+			#intro
+			{
+				padding-top: 40px;
+			}
+			#first,
+			#second,
+			#third
+			{
+				border-top: 1px solid #ccc;
+				padding-top: 60px;
+			}
+
+			#header
+			{
+				margin-left: 0px;
+				position: fixed;
+				top: 0;
+				right: 0%;
+				width: 100%;
+
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+
+				-webkit-transition: left 0.4s ease, right 0.4s ease, margin 0.4s ease;
+				-moz-transition: left 0.4s ease, right 0.4s ease, margin 0.4s ease;
+				transition: left 0.4s ease, right 0.4s ease, margin 0.4s ease;
+			}
+			html.mm-opened #header
+			{
+				margin-left: 0px;
+				right: 0%;
+			}
+			html.mm-opening #header
+			{
+				margin-right: -65px;
+				right: 100%;
+			}
+			@media all and (min-width: 500px) {
+				html.mm-opening #header
+				{
+					right: 500px;
+				}
+			}

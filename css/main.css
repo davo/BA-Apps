@@ -36,17 +36,15 @@ summary {
   font-style: normal;
 }
 header {
-  padding-bottom: 52px;
+  padding-bottom: 0px;
+  position: fixed;
+  z-index: 1000;
 }
 header .navbar-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
   z-index: 1030;
   margin-bottom: 0;
 }
 header .header-gcba {
-  height: 55px;
   padding: 10px 0;
   overflow: visible;
   background-color: #f9dd00;
@@ -95,15 +93,34 @@ header .header-gcba h2.slogan {
   letter-spacing: -1px;
   color: #000;
   font-weight: bold;
+  line-height: 13px;
 }
-header .logo-apps h1 {
+header .branding {
+  text-align: center;
+}
+header .branding .logo-apps h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   display: block;
   width: 229px;
   height: 144px;
+  margin-top: 50px;
   background-image: url(/img/logo-apps.png);
+  background-size: 97%;
+  background-repeat: no-repeat;
+}
+header .branding .toggle a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 40px;
+  height: 32px;
+  margin-top: 50px;
+  background-image: url(/img/toggle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #page section.home {
   background-color: #CECECE;
@@ -116,8 +133,9 @@ header .logo-apps h1 {
 }
 section {
   padding-top: 0px;
-  height: 1000px;
+  height: 1100px;
   width: 100%;
+  overflow: hidden;
 }
 .bg-image {
   /* default background-position */
@@ -140,12 +158,14 @@ section.home {
 }
 .bg-phone-line-one,
 .bg-phone-line-two,
-.bg-phone-pat {
+.bg-phone-pat,
+.bg-phone-misc-cones,
+.bg-phone-text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   z-index: 500;
   -webkit-transform-origin: 0 0;
   -moz-transform-origin: 0 0;
@@ -160,6 +180,8 @@ section.home {
   -ms-backface-visibility: hidden;
 }
 .bg-phone-line-one {
+  margin-left: 20px;
+  margin-top: 50px;
   background: url(/img/home_movil_line_1.png) no-repeat center center;
 }
 .bg-phone-line-two {
@@ -167,6 +189,16 @@ section.home {
 }
 .bg-phone-pat {
   background: url(/img/home_movil_diag_pat.png) no-repeat center center;
+}
+.bg-phone-misc-cones {
+  margin-left: -10px;
+  margin-top: 110px;
+  background: url(/img/home_misc_cones.png) no-repeat center center;
+}
+.bg-phone-text {
+  margin-left: -140px;
+  margin-top: -42px;
+  background: url(/img/home_text.png) no-repeat center center;
 }
 section.about {
   position: relative;

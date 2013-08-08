@@ -21,99 +21,82 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-232.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/mmenu.css">
+        <link rel="stylesheet" href="css/jquery.sidr.light.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
     </head>
     <body>
 
-
+    <div id="sidr-right" class="sidr right">
+      <ul class="floating-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </div>
 
     <header>
 
-      <div class="navbar-fixed-top">
-
-        <div class="header-gcba">
-          <div class="header-inner">
-            <div class="container">
-              <a href="http://buenosaires.gob.ar" target="_blank"><div class="logo"></div></a>
-              <h2 class="slogan">En todo estás vos</h2>
-            </div>
+      <div class="navbar navbar-fixed-top">
+          <div class="header-gcba">
+              <div class="header-inner">
+                <div class="container">
+                  <a href="http://buenosaires.gob.ar" target="_blank"><div class="logo"></div></a>
+                  <h2 class="slogan">En todo estás vos</h2>
+                </div>
+              </div>
           </div>
-        </div>
-
-        <div class="container">
-          <div class="row-fluid">
-            <div class="span6 logo-apps">
-                <h1>Buenos Aires Apps</h1>
-            </div>
-            <div class="span6"></div>
-          </div>
-        </div>
-
       </div>
+
+
+          <div class="container branding">
+            <div class="row-fluid">
+              <div class="span6 logo-apps">
+                  <h1><a href="#home">Buenos Aires Apps</a></h1>
+              </div>
+              <div class="span6">
+                <div class="toggle">
+                  <a id="right-menu" href="">Menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </header>
 
-
-<!-- <header>
-
-
-  <div class="navbar-fixed-top">
-
-
-      <div class="header-gcba">
-
-          <div class="container">
-            <a href="http://buenosaires.gob.ar" target="_blank"><div class="logo"></div></a>
-            <h2 class="slogan">En todo estás vos</h2>
-          </div>
-
-    </div>
-
-
-
-</header> -->
-
-
   <div id="page">
 
-      <section class="bg-image home" data-scroll-index='0'>
+      <section class="bg-image home" data-0="background-position:center -300px;" data-end="background-position: center -2100px;" id="home">
         <div class="container">
+          <div class="bg-phone-text" data-0="background-position:center 511px;" data-end="background-position: center 200px;"></div>
+          <div class="bg-phone-misc-cones"></div>
+          <div class="bg-phone-pat"></div>
+          <div class="bg-phone-line-one"></div>
+          <div class="bg-phone-line-two"></div>
 
-        <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line-one"></div>
-        <div class="bg-phone-line-two"></div>
-          <!-- <article class="row">
-                <h2>Buenos Aires Apps</h2>
-              </div>
-                <p>2° concurso de aplicaciones de la Ciudad</p>
-          </article> -->
         </div>
       </section>
 
-      <section class="bg-image about" data-scroll-index='1'>
+      <section class="bg-image about" id="about">
         <div class="container">
 
         <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line-one"></div>
-        <div class="bg-phone-line-two"></div>
-          <!-- <article class="row">
-                <h2>Buenos Aires Apps</h2>
+          <article class="row">
+                <h2>Segundo concurso de aplicaciones</h2>
               </div>
                 <p>2° concurso de aplicaciones de la Ciudad</p>
-          </article> -->
+          </article>
         </div>
       </section>
 
-      <section class="bg-image join" data-scroll-index='2'>
+      <section class="bg-image join" id="join">
         <div class="container">
 
         <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line-one"></div>
-        <div class="bg-phone-line-two"></div>
           <!-- <article class="row">
                 <h2>Buenos Aires Apps</h2>
               </div>
@@ -122,12 +105,10 @@
         </div>
       </section>
         
-      <section class="bg-image prizes" data-scroll-index='3'>
+      <section class="bg-image prizes">
         <div class="container">
 
         <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line-one"></div>
-        <div class="bg-phone-line-two"></div>
           <!-- <article class="row">
                 <h2>Buenos Aires Apps</h2>
               </div>
@@ -136,7 +117,7 @@
         </div>
       </section>
 
-      <section class="bg-image timeline" data-scroll-index='4'>
+      <section class="bg-image timeline">
         <div class="container">
 
         <div class="bg-phone-pat"></div>
@@ -154,22 +135,46 @@
         <!--script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script-->
         
         <script src="/js/jquery.min.js"></script>
-        <script src="/js/waypoints.min.js"></script>
-       
+        
         
 
         <script src="/js/TweenMax.min.js"></script>
         <script src="/js/jquery.gsap.min.js"></script>
-        <script src="/js/app.js"></script>
+        <!--script src="/js/app.js"></script-->
         <!--script src="/js/scrollIt.min.js"></script>
         <script>$(function() { $.scrollIt(); });</script-->
-        <!--script src="/js/skrollr.min.js"></script>
+        <script src="/js/jquery.sidr.js"></script>
+        <script src="/js/skrollr.min.js"></script>
+        <script src="/js/skrollr.menu.js"></script>
         
         <script type="text/javascript">
+        
+
+        $(document).ready(function() {
+
               var s = skrollr.init({
-                edgeStrategy: 'set'
+                edgeStrategy: 'set',
+                forceHeight: false
               });
-        </script-->
+
+              skrollr.menu.init(s);
+
+              $('#right-menu').sidr({
+                name: 'sidr-right',
+                side: 'right'
+              });
+
+
+
+              // $("#right-menu").click(
+              //     function () {
+              //       $.sidr('toggle', 'sidr-right');
+              //     });
+
+              
+
+        });           
+        </script>
 
         <!-- 
         <script src="js/jquery.hammer.min.js"></script>
