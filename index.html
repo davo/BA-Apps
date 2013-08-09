@@ -20,10 +20,7 @@
         
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap-232.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/jquery.sidr.light.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -31,17 +28,18 @@
     </head>
     <body>
 
-    <div id="sidr-right" class="sidr right">
+    <div id="" class="navigation">
       <ul class="floating-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#join">Join</a></li>
+        <li><a data-scroll-nav="0">Home</a></li>
+        <li><a data-scroll-nav="1">About</a></li>
+        <li><a data-scroll-nav="3">Join</a></li>
+        <li><a data-scroll-nav="4">Prizes</a></li>
+        <li><a data-scroll-nav="5">Timeline</a></li>
       </ul>
     </div>
 
-    <header>
-
-      <div class="navbar navbar-fixed-top">
+    <header class="navbar-fixed-top">
+      <div class="navbar">
           <div class="header-gcba">
               <div class="header-inner">
                 <div class="container">
@@ -51,26 +49,30 @@
               </div>
           </div>
       </div>
-
-
-          <div class="container branding">
+      <nav>
+        <div class="branding">
+          <div class="container">
             <div class="row-fluid">
               <div class="span6 logo-apps">
-                  <h1><a href="#home">Buenos Aires Apps</a></h1>
+                  <h1><a href="#home" accesskey="h" tabindex="1">Buenos Aires Apps</a></h1>
               </div>
               <div class="span6">
                 <div class="toggle">
-                  <a id="right-menu" href="">Menu</a>
+                  <a id="right-menu" href="" accesskey="m" tabindex="2">Menu</a>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
+      </nav>      
     </header>
+
+
+
 
   <div id="page">
 
-      <section class="bg-image home" data-0="background-position:center -300px;" data-end="background-position: center -2100px;" id="home">
+      <section class="bg-image home" data-0="background-position:center -300px;" data-end="background-position: center -2100px;" id="home" data-scroll-index="0">
         <div class="container">
           <div class="bg-phone-text" data-0="background-position:center 511px;" data-end="background-position: center 200px;"></div>
           <div class="bg-phone-misc-cones"></div>
@@ -81,55 +83,64 @@
         </div>
       </section>
 
-      <section class="bg-image about" id="about">
+      <section class="bg-image about" id="about" data-scroll-index="1">
+        <div class="container">
+          <article class="row">
+                <ul class="content owl-carousel owl-theme" id="about-content">
+                  <li class="item">
+                    <h5><span>Más de</span><span class="highlight">$100.000</span><span>en premios</span></h5>
+                  </li>
+                  <li class="item">
+                    <h5><span>Tenés tiempo hasta el</span><span class="highlight">15 de noviembre</span><span>para presentar</span><span>tu aplicación</span></h5>
+                  </li>
+                  <li class="item">
+                    <h5><span>Tenés tiempo hasta el</span><span class="highlight">15 de noviembre</span><span>para presentar</span><span>tu aplicación</span></h5>
+                  </li>
+                  <li class="item">
+                    <h5><span>Tenés tiempo hasta el</span><span class="highlight">15 de noviembre</span><span>para presentar</span><span>tu aplicación</span></h5>
+                  </li>
+                </ul>
+          </article>
+        <div class="bg-phone-lines" data-0="background-position: center 50px;" data-end="background-position: center 1000px"></div>
+        <div class="bg-about-circle"></div>
+        <div class="bg-about-shapes" data-0="filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1;"
+data-end="filter: alpha(opacity=20); -moz-opacity: .2; -khtml-opacity: .2; opacity: .2;"></div>
+
+        </div>
+      </section>
+
+      <section class="bg-image join" id="join" data-scroll-index="2">
         <div class="container">
 
         <div class="bg-phone-pat"></div>
           <article class="row">
-                <h2>Segundo concurso de aplicaciones</h2>
-              </div>
+                <h2>Buenos Aires Apps</h2>
+                <p>2° concurso de aplicaciones de la Ciudad</p>
+          </article>
+        </div>
+      </section>
+        
+      <section class="bg-image prizes" data-scroll-index="3">
+        <div class="container">
+
+        <div class="bg-phone-pat"></div>
+          <article class="row">
+                <h2>Buenos Aires Apps</h2>
                 <p>2° concurso de aplicaciones de la Ciudad</p>
           </article>
         </div>
       </section>
 
-      <section class="bg-image join" id="join">
+      <section class="bg-image timeline" data-scroll-index="4">
         <div class="container">
-
-        <div class="bg-phone-pat"></div>
-          <!-- <article class="row">
+          <article class="row">
                 <h2>Buenos Aires Apps</h2>
-              </div>
                 <p>2° concurso de aplicaciones de la Ciudad</p>
-          </article> -->
-        </div>
-      </section>
-        
-      <section class="bg-image prizes">
-        <div class="container">
-
-        <div class="bg-phone-pat"></div>
-          <!-- <article class="row">
-                <h2>Buenos Aires Apps</h2>
-              </div>
-                <p>2° concurso de aplicaciones de la Ciudad</p>
-          </article> -->
+          </article>
         </div>
       </section>
 
-      <section class="bg-image timeline">
-        <div class="container">
 
-        <div class="bg-phone-pat"></div>
-        <div class="bg-phone-line-one"></div>
-        <div class="bg-phone-line-two"></div>
-          <!-- <article class="row">
-                <h2>Buenos Aires Apps</h2>
-              </div>
-                <p>2° concurso de aplicaciones de la Ciudad</p>
-          </article> -->
-        </div>
-      </section>
     </div>
 
         <!--script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script-->
@@ -141,35 +152,42 @@
         <script src="/js/TweenMax.min.js"></script>
         <script src="/js/jquery.gsap.min.js"></script>
         <!--script src="/js/app.js"></script-->
-        <!--script src="/js/scrollIt.min.js"></script>
-        <script>$(function() { $.scrollIt(); });</script-->
-        <script src="/js/jquery.sidr.js"></script>
         <script src="/js/skrollr.min.js"></script>
-        <script src="/js/skrollr.menu.js"></script>
+        <script src="/js/scrollIt.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+
+        <!--script src="/js/skrollr.menu.js"></script-->
         
         <script type="text/javascript">
         
 
         $(document).ready(function() {
 
+              $.scrollIt({
+                easing: 'elasout', 
+                scrollTime: 700,
+                activeClass: 'active'
+              });
+
               var s = skrollr.init({
                 edgeStrategy: 'set',
                 forceHeight: false
               });
 
-              skrollr.menu.init(s);
-
-              $('#right-menu').sidr({
-                name: 'sidr-right',
-                side: 'right'
-              });
-
-
-
-              // $("#right-menu").click(
-              //     function () {
-              //       $.sidr('toggle', 'sidr-right');
-              //     });
+              $("#about-content").owlCarousel({
+               
+                    navigation : false,
+               
+                    slideSpeed : 100,
+                    paginationSpeed : 400,
+               
+                    items : 1, 
+                    itemsDesktop : false,
+                    itemsDesktopSmall : false,
+                    itemsTablet: false,
+                    itemsMobile : false
+               
+                });
 
               
 

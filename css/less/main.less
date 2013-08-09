@@ -1,16 +1,25 @@
 @import "lesshat";
 
-// Fix slow transformations in iOS, Webkit
+@import url('normalize.css');
+@import url('bootstrap.css');
+@import url('bootstrap-responsive.css');
+@import url('owl.carousel.css');
+@import url('owl.theme.css');
 
+/// Fix slow transformations in iOS, Webkit
 
 html {
-    -webkit-font-smoothing:antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+    -webkit-font-smoothing:          antialiased;
+    -webkit-webkit-text-size-adjust: 100%;
+    -moz-webkit-text-size-adjust:    100%;
+    -ms-webkit-text-size-adjust:     100%;
+    -o-webkit-text-size-adjust:      100%;
+    webkit-text-size-adjust:         100%;
+    -ms-text-size-adjust:            100%;
+    text-rendering:                  optimizeLegibility;
+    -webkit-backface-visibility:     hidden;
+    moz-backface-visibility:         hidden;
+    -ms-backface-visibility:         hidden;
 }
 
 article,
@@ -24,15 +33,32 @@ hgroup,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
 }
 
+::-moz-selection {
+    color: gold;
+    background: red;
+}
+::selection {
+    color: gold;
+    background: red;
+} 
 
-// ::-webkit-scrollbar-thumb:vertical{width:10px;height:10px;background-color:#535353}
-// ::-webkit-scrollbar{width:10px;height:5px;background:#000;margin-right:5px}
-
-::-moz-selection { color: gold;  background: red; }
-::selection      { color: gold;  background: red; } 
+@font-face {
+    font-family:                            'Museo 700';
+    src: url('/fonts/museo_slab_700-webfont.eot');
+    src: url('/fonts/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_700-webfont.woff') format('woff'), url('/fonts/museo_slab_700-webfont.ttf') format('truetype'), url('/fonts/museo_slab_700-webfont.svg#museo_slab700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Museo 900';
+  src: url('/fonts/museo_slab_900-webfont.eot');
+  src: url('/fonts/museo_slab_900-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_900-webfont.woff') format('woff'), url('/fonts/museo_slab_900-webfont.ttf') format('truetype'), url('/fonts/museo_slab_900-webfont.svg#museo_slab900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face{
     font-family:'Gotham';
@@ -42,17 +68,12 @@ summary {
     font-style:normal
 }
 
+.navigation {
+    display: none;
+}
 
 header {
-    padding-bottom: 0px;
-    position: fixed;
-    z-index: 1000;
-
-    .navbar-fixed-top {
-
-    z-index: 1030;
-    margin-bottom: 0
-    }
+    display: block;
 
     .header-gcba {
         padding:10px 0;
@@ -71,6 +92,11 @@ header {
         filter:progid:dximagetransform.microsoft.gradient(enabled=false);
         filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffe603',endColorstr='#ffbd04',GradientType=0);
         box-shadow:0 0 10px rgba(0,0,0,.7);
+
+        .header-inner {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
     
         &:hover,
         &:active,
@@ -110,35 +136,38 @@ header {
     }
     
     .branding {
-        
-        text-align: center;
+        margin-top: 30px;
 
         .logo-apps h1 a {
+            float: left;
+            margin-left: 100px;
             text-indent: 100%;
             white-space: nowrap;
             overflow: hidden;
             display: block;
             width: 229px;
             height: 144px;
-            margin-top: 50px;
             background-image:url(/img/logo-apps.png);
             background-size: 97%;
             background-repeat: no-repeat;
         }
 
         .toggle a {
+            float: right;
+            margin-top: 30px;
+            margin-right: 250px;
             text-indent: 100%;
             white-space: nowrap;
             overflow: hidden;
             display: block;
             width: 40px;
             height: 32px;
-            margin-top: 50px;
             background-image:url(/img/toggle.png);
             background-size: 100%;
             background-repeat: no-repeat;
             
         }
+
     }
 
 }
@@ -166,6 +195,41 @@ section {
   height: 1100px;
   width: 100%;
   overflow: hidden;
+
+    .content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        text-align: center;
+        padding-top: 430px;
+
+        li {
+            
+            margin: 0 auto;
+            list-style-type: none;
+            font-family: "Museo 900", "Arial Black", "Arial", sans;
+            
+            
+            h5 {
+                font-size: 40px;
+                line-height: 37px;
+                letter-spacing: -3px;
+                text-transform: uppercase;
+            }
+
+                span {
+                    display: block;
+                    
+                    &.highlight {
+                        color: #fff;
+                        font-size: 55px;
+                    }
+
+                }
+            
+        }
+
+    }
 }
 
 .bg-image {
@@ -187,13 +251,14 @@ section.home {
 
 }
 
-.bg-phone-line-one, .bg-phone-line-two, .bg-phone-pat, .bg-phone-misc-cones, .bg-phone-text {
+.bg-phone-line-one, .bg-phone-line-two, .bg-phone-pat, .bg-phone-misc-cones, .bg-phone-text,
+.bg-about, .bg-phone-lines, .bg-about-circle, .bg-about-shapes {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 1200px;
-    z-index: 500;
+
     -webkit-transform-origin:0 0;
     -moz-transform-origin:0 0;
     -ms-transform-origin:0 0;
@@ -205,10 +270,7 @@ section.home {
     box-sizing: border-box;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-
-    
-
+    -ms-backface-visibility: hidden; 
 }
 .bg-phone-line-one {
     margin-left: 20px;
@@ -234,7 +296,33 @@ section.home {
     background: url(/img/home_text.png) no-repeat center center;
 }
 
+.bg-about {
+    margin-top: -110px;
+    background: url(/img/about_bkg.png) no-repeat center center;
+}
 
+
+
+.bg-phone-lines {
+    z-index: 5;
+    margin-top: -100px;
+    background: url(/img/about_lines_bkg.png) no-repeat center center;
+}
+.bg-about-circle {
+    z-index: 3;
+    margin-top: -100px;
+    background: url(/img/about_circle_bkg.png) no-repeat center center;
+}
+.bg-about-shapes {
+    z-index: 1;
+    margin-top: -100px;
+    background: url(/img/about_shapes_bkg.png) no-repeat center center;
+}
+
+.bg-about {
+    margin-top: -110px;
+    background: url(/img/about_bkg.png) no-repeat center center;
+}
 
 section.about {
     
@@ -242,6 +330,10 @@ section.about {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    h5 {
+        color: #df03ed;
+    }
 }
 
 section.join {
@@ -272,27 +364,27 @@ section.timeline {
 
 
 
-// body {
-//     background-color: #211c6d;
-//     font-size: 1em;
-//     font-weight: 400;
-//     font-style: normal;
-//     -webkit-font-smoothing: antialiased;
-//     -webkit-text-stroke: 1px transparent;
-//     overflow: hidden;
-//     height: 100%;
-//     width: 100%;
-// }
+/// body {
+///     background-color: #211c6d;
+///     font-size: 1em;
+///     font-weight: 400;
+///     font-style: normal;
+///     -webkit-font-smoothing: antialiased;
+///     -webkit-text-stroke: 1px transparent;
+///     overflow: hidden;
+///     height: 100%;
+///     width: 100%;
+/// }
 
-// .center {
-//     margin: 0 auto;
-// }
+/// .center {
+///     margin: 0 auto;
+/// }
 
-// .container {
-//     width: 100%;
-//     padding: 0 20px;
-//     margin: 0 auto;
-//     }
+/// .container {
+///     width: 100%;
+///     padding: 0 20px;
+///     margin: 0 auto;
+///     }
 
 
 
@@ -496,29 +588,38 @@ textarea {
 }
 
 
-// @media only screen 
-// and (min-device-width : 320px) 
-// and (max-device-width : 480px) {
+/// @media only screen 
+/// and (min-device-width : 320px) 
+/// and (max-device-width : 480px) {
 
-//         section {
-//           padding-top: 0px;
-//           height: 600px;
-//           width: 100%;
-//         }
+///         section {
+///           padding-top: 0px;
+///           height: 600px;
+///           width: 100%;
+///         }
 
-//         .bg-phone-line, .bg-phone-pat {
-//             position: absolute;
-//             top: 60px;
-//             left: 0;
-//             width: 250px;
-//             height: 600px;
-//         }
+///         .bg-phone-line, .bg-phone-pat {
+///             position: absolute;
+///             top: 60px;
+///             left: 0;
+///             width: 250px;
+///             height: 600px;
+///         }
 
-// }
+/// }
 
-// iOS Media Queries
+/// Desktop Media Queries
 
-// iPhone v(4,4S) portrait
+@media screen and (max-height:800px) {
+    section {
+        padding-top: 0px;
+        height: 800px;
+    }
+}
+
+/// iOS Media Queries
+
+/// iPhone v(4,4S) portrait
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     header {
         padding-bottom: 40px;
@@ -590,7 +691,7 @@ textarea {
     }
 }
 
-// iPhone v(4/4S) landscape
+/// iPhone v(4/4S) landscape
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     header {
         padding-bottom: 40px;
@@ -661,32 +762,32 @@ textarea {
     }
 }
 
-// iPhone v(*) portrait
-// test: black text
+/// iPhone v(*) portrait
+/// test: black text
 @media all and (max-device-width: 480px) and (orientation: portrait)  {
   a {
     
   }
 }
 
-// iPhone v(*) landscape
-// test: orange text
+/// iPhone v(*) landscape
+/// test: orange text
 @media all and (max-device-width: 480px) and (orientation: landscape)  {
   a {
     color: orange;
   }
 }
 
-// iPad portrait
-// test: yellow text
+/// iPad portrait
+/// test: yellow text
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   a {
     color: yellow;
   }
 }
 
-// iPad landscape
-// test: purple text
+/// iPad landscape
+/// test: purple text
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   a {
     color:  purple;

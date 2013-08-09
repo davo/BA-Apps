@@ -1,0 +1,581 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"of",
+				"overflow"
+			],
+			[
+				"right",
+				"right-menu"
+			],
+			[
+				"jqu",
+				"jquery"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"FONT",
+				"font-family"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"max",
+				"max-width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 8064,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 93.0,
+		"selected_items":
+		[
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"less",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"les",
+				"List LESS variables"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"app",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"le",
+				"Set Syntax: LESS"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/Users/davo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/index.html",
+		"/Users/davo/Dropbox/BA Apps II/landing/BA-Apps/css/landing.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/less/main.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/owl.carousel.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/notes.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/owl.theme.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/OwlCarousel/owl-carousel/owl.carousel.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/owl.carousel.min.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mrvisual.info/js/scrollTo.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/scrollIt.js/scrollIt.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/skrollr.menu.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/jquery.sidr.light.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-767px-max.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-navbar.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-utilities.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-768px-979px.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/bootsrap-responsive.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/bootstrap.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/onepage-drag.html",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/jquery.sidr.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/skrollr-ie/src/skrollr.ie.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/mmenu.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/jquery.mmenu.min.js",
+		"/Users/davo/Dropbox/BA Apps II/landing/BA-Apps/index.html",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/app.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/less/landing.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/landing.html",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/mmenu.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/waypoints.min.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/dragopen.html",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/vertical-submenus.html",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/mmenu-widescreen.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/mmenu-widescreen.css",
+		"/Users/davo/Dropbox/BA Apps II/hackdash-cypher/hackdash/keys.json",
+		"/Users/davo/Dropbox/BA Apps II/hackdash-cypher/hackdash/config.json",
+		"/Users/davo/WRKK/A/antena/antena.co/public/index.html",
+		"/Users/davo/WRKK/A/antena/antena.co/public/assets/css/skins/default.less",
+		"/Users/davo/WRKK/A/antena/antena.co/public/assets/css/flat-ui.css",
+		"/Users/davo/WRKK/A/antena/antena.co/public/assets/css/main.less",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/css/css/main.css",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/css/less/main.less",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/index.html",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/build/Swipe/index.html",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/js/main.js",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/www/css/main.css",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/views/header.jade",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/public/styles/select2.css",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/public/styles/less/main.less",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/public/styles/main.css",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/models/index.js",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/server.js",
+		"/Users/davo/Downloads/ST2_Icons/st2.png",
+		"/Users/davo/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/davo/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/.gitignore",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/config.json",
+		"/Users/davo/WRKK/B/buenosaires/BA_AppsII/hackdash/keys.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"carou",
+			": 1",
+			"0.5",
+			"50",
+			"0deg",
+			"120",
+			";",
+			"110px",
+			"{\n    background:",
+			"{}",
+			"bg",
+			"</h2>\n              </div>",
+			"href",
+			"easing",
+			"href=\"",
+			"span4",
+			"margin-top",
+			"header",
+			"@media -sass-debug-info{filename{font-family:",
+			"@media -sass-debug-info{filename{font-family:file\\:\\/\\/\\/var\\/www\\/sidr\\/src\\/scss\\/sidr\\/_base\\.scss}line{font-family:\\0000324}}\n",
+			"handle",
+			"click",
+			"keydown",
+			"easing",
+			"data-scroll-index",
+			"center ",
+			"\n        <div class=\"bg-phone-line-one\"></div>\n        <div class=\"bg-phone-line-two\"></div>",
+			"     <div class=\"bg-phone-pat\"></div>\n        <div class=\"bg-phone-line-one\"></div>\n        <div class=\"bg-phone-line-two\"></div>",
+			"        <div class=\"bg-phone-pat\"></div>\n        <div class=\"bg-phone-line-one\"></div>\n        <div class=\"bg-phone-line-two\"></div>",
+			"html",
+			"import",
+			"style",
+			".ch-",
+			"ch-",
+			"ch-grid",
+			"left",
+			"z-inde",
+			"ch-",
+			"354",
+			"museo_slab_",
+			"65",
+			"img-1",
+			"back",
+			"800px",
+			"180px",
+			"180",
+			"../",
+			"bg-phone-line",
+			"section",
+			"phone-line",
+			"bg-phone-line",
+			"header",
+			"data-scroll-index",
+			"mm-left",
+			"mm-top",
+			"z-in",
+			"margin-left: 30px;",
+			".formSearch",
+			".formSearch ",
+			"                                        ",
+			"                                       ",
+			"                                      ",
+			"                                     ",
+			"                                    ",
+			"                                   ",
+			"                                  ",
+			"                                 ",
+			"                                ",
+			"                               ",
+			"                              ",
+			"                             ",
+			"                            ",
+			"                           ",
+			"                          ",
+			"                         ",
+			"                        ",
+			"                       ",
+			"                      ",
+			"                     ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"3px",
+			"                           ",
+			"                          ",
+			"                         ",
+			"                        ",
+			"                       ",
+			"                      ",
+			"                     ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"                                                 ",
+			"                                                ",
+			"                                               ",
+			"                                              ",
+			"                                             ",
+			"                                            ",
+			"                                           ",
+			"                                          ",
+			"                                         ",
+			"                                        ",
+			"                                       ",
+			"                                      ",
+			"                                     ",
+			"                                    ",
+			"                                   ",
+			"                                  ",
+			"                                 ",
+			"                                ",
+			"                               "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8064,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								100
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 129.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "www.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"ow",
+				"build/OwlCarousel/owl-carousel/owl.carousel.css"
+			],
+			[
+				"scro",
+				".refs/mrvisual.info/js/scrollTo.js"
+			],
+			[
+				"main",
+				"css/less/main.less"
+			],
+			[
+				"skorl",
+				"build/skrollr-menu/src/skrollr.menu.js"
+			],
+			[
+				"skor",
+				"build/skrollr-ie/src/skrollr.ie.js"
+			],
+			[
+				"mm",
+				"css/mmenu.css"
+			],
+			[
+				"onepage-drag.html",
+				".refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/onepage-drag.html"
+			],
+			[
+				"one",
+				".refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/onepage-drag.html"
+			],
+			[
+				"app",
+				"js/app.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"index.html",
+				"www/build/Swipe/index.html"
+			],
+			[
+				"hea",
+				"views/header.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/WRKK/B/buenosaires/BA_AppsII/ba apps.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
