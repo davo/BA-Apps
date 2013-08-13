@@ -1,4 +1,0 @@
-# robotstxt.org/
-Sitemap: http://gospecless.com/sitemap.xml
-User-agent: *
-Disallow: /thank-you/
