@@ -27,17 +27,6 @@
 
     </head>
     <body>
-
-    <div id="" class="navigation">
-      <ul class="floating-nav">
-        <li><a data-scroll-nav="0">Home</a></li>
-        <li><a data-scroll-nav="1">About</a></li>
-        <li><a data-scroll-nav="3">Join</a></li>
-        <li><a data-scroll-nav="4">Prizes</a></li>
-        <li><a data-scroll-nav="5">Timeline</a></li>
-      </ul>
-    </div>
-
     <header class="navbar-fixed-top">
       <div class="navbar">
           <div class="header-gcba">
@@ -56,7 +45,29 @@
               <div class="span3 logo-apps">
                   <h1><a href="#home" accesskey="h" tabindex="1">Buenos Aires Apps</a></h1>
               </div>
-              <div class="span4 offset2">
+              <div class="span6">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="container">
+                      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </a>
+                      <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a data-scroll-nav="0" href="javascript:void();">Inicio</a></li>
+                            <li><a data-scroll-nav="1" href="javascript:void();">¿Qué es?</a></li>
+                            <li><a data-scroll-nav="2" href="javascript:void();">Participá</a></li>
+                            <li><a data-scroll-nav="3" href="javascript:void();">Cronograma</a></li>
+                            <li><a data-scroll-nav="4" href="javascript:void();">Jurado</a></li>
+                            <li><a href="bases.html">Bases y condiciones</a></li>
+                            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                        </ul>
+                      </div><!-- /.nav-collapse -->
+                    </div><!-- /.container -->
+                  </div><!-- /.navbar-inner -->
+                </div><!-- /.navbar -->
               </div>
             </div>
           </div>
@@ -69,7 +80,7 @@
 
   <div id="page">
 
-      <section class="bg-image home" data-0="background-position:center -300px;" data-end="background-position: center -2100px;" id="home" data-scroll-index="0">
+      <section class="bg-image home" id="home" data-scroll-index="0">
         <div class="container">
           <div class="animated fadeInRight bg-phone-text" data-0="background-position:center 511px;" data-end="background-position: center 200px;"></div>
           <div class="bg-phone-misc-cones"></div>
@@ -116,7 +127,7 @@
                     </li>
                 </ul>
             </article>
-            <div class="bg-phone-lines" data-0="background-position: center 50px;" data-end="background-position: center 1000px"></div>
+            <div class="bg-phone-lines"></div>
             <div class="bg-about-circle"></div>
             <div class="bg-about-shapes" data-0="filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1;"
             data-end="filter: alpha(opacity=20); -moz-opacity: .2; -khtml-opacity: .2; opacity: .2;"></div>
@@ -129,36 +140,70 @@
             <article class="row">
                 <ul class="content owl-carousel owl-theme" id="join-content">
                     <li class="item">
-                        <div class="bkg">
-                            <div class="bg-join"></div>
+                        <div class="bkg slide-one">
+                            
+                            <div class="bg-join fetch"></div>
+                            <div class="bg-join-text">Participá</div>
+                            <div class="row">
+                                <div class="span12 static-full">
+                                <h5>Todos pueden participar</h5>
+                                <div class="bkg-sharp"></div>
+                                <p>No importa si sos una empresa, una ONG, un equipo de amigos o, simplemente, un llanero solitario.</p></div>
+                            </div>
                             <div class="animated fadeRightDown bg-phone-line-one"></div>
-                            <div class="animated fadeInRight bg-join-text"></div>
                             <div class="animated fadeLeftDown bg-phone-line-two"></div>
-                            <div class="animated fadeInRight bg-join-text">Participá</div>
                         </div>
                     </li>
                     <li class="item">
-                        <div class="bkg">
-                            <div class="bg-join-slide-two"></div>
-                            <div class="animated fadeInRight bg-join-text-slide-two"></div>
+                        <div class="row">
+                            <div class="span12 static-full">
+                                <h5>De lo que quieras</h5>
+                                <div class="bkg-sharp"></div>
+                                <p>De lo que quieras, para la plataforma que se te ocurra, utilizando el lenguaje que más te guste y sobre el tema que más te interese (nosotros te mostramos algunos).</p>
+                            </div>
+                        </div>
+                        <div class="bkg slide-two">
+                            <div class="bg-join"></div>
+                            <div class="bg-join-text"></div>
                         </div>
                     </li>
                     <li class="item">
-                        <div class="bkg">
-                            <div class="bg-join-slide-three"></div>
-                            <div class="animated fadeInRight bg-join-text-slide-three"></div>
+                        <div class="row">
+                            <div class="span12 static-full">
+                                <h5>Para participar</h5>
+                                <div class="bkg-sharp"></div>
+                                <p>Tenés que usar, al menos, un conjunto de datos de Buenos Aires Data, el catálogo de datos abiertos del Gobierno de la Ciudad que cuenta con más de 200 recursos de información.</p>
+                            </div>
+                        </div>
+                        <div class="bkg slide-three">
+                            <div class="bg-join"></div>
+                            <div class="bg-join-text"></div>
                         </div>
                     </li>
                     <li class="item">
-                        <div class="bkg">
-                            <div class="bg-join-slide-four"></div>
-                            <div class="animated fadeInRight bg-join-text-slide-four"></div>
+                        <div class="row">
+                            <div class="span12 static-full">
+                                <h5>Remixá</h5>
+                                <div class="bkg-sharp"></div>
+                                <p>Además, podés remixar la información de Buenos Aires Data con otros recursos que estén disponibles. Todos los que quieras y cómo quieras.</p>
+                            </div>
+                        </div>
+                        <div class="bkg slide-four">
+                            <div class="bg-join"></div>
+                            <div class="bg-join-text"></div>
                         </div>
                     </li>
                     <li class="item">
-                        <div class="bkg">
-                            <div class="bg-join-slide-five"></div>
-                            <div class="animated fadeInRight bg-join-text-slide-five"></div>
+                        <div class="row">
+                            <div class="span12 static-full">
+                                <h5>Postulá</h5>
+                                <div class="bkg-sharp"></div>
+                                <p>Una vez que esté terminada subí el link, una descripción, imágenes y un video que explique qué hace y para qué sirve.</p>
+                            </div>
+                        </div>
+                        <div class="bkg slide-five">
+                            <div class="bg-join"></div>
+                            <div class="bg-join-text"></div>
                         </div>
                     </li>                    
                 </ul>
@@ -253,7 +298,7 @@
                                             <div class="judge-one"></div>
                                         </div>
                                         <div class="name">Paula Alvarado</div>
-                                        <div class="bio">Editora TreeHugger Latinoamérica & TreeHugger Brasil</div>
+                                        <div class="bio">Editora para Latinoamérica & Brasil<br>Treehugger</div>
                                         <div class="bkg-sharp"></div>
                                         <div class="full-bio">Es periodista y blogger dedicada a temas que cruzan diseño, ciudades y medio ambiente. Edita blogs para Discovery Latinoamérica y el sitio BAInspiration.com.</div>
                                     </div>
@@ -267,7 +312,7 @@
                                             <div class="judge-two"></div>
                                         </div>
                                         <div class="name">Pablo Sanchez</div>
-                                        <div class="bio">Co-Fundador Vulsai</div>
+                                        <div class="bio">Co-Fundador<br>Vulsai</div>
                                         <div class="bkg-sharp"></div>
                                         <div class="full-bio">Pablo Sánchez es co-fundador y CEO de Vulsai, un estudio de diseño y desarrollo de productos innovadores para startups y grandes clientes.</div>
                                     </div>                        
@@ -289,10 +334,10 @@
                                         <div class="picture">
                                             <div class="judge-three"></div>
                                         </div>
-                                        <div class="name">Santiago Do Rego</div>
-                                        <div class="bio">Periodista TN Tecno</div>
+                                        <div class="name">Silvia Carbonel</div>
+                                        <div class="bio">Directora Centro de Entrepreneurship<br>IAE Business School – Universidad Austral</div>
                                         <div class="bkg-sharp"></div>
-                                        <div class="full-bio"></div>
+                                        <div class="full-bio">Silvia es además miembro del Directorio de la Fundación Endeavor y VP de IWF (International Women Forum). Cuenta con vasta experiencia corporativa y de negocios, habiendo sido miembro del "board" de compañías durante los últimos 15 años.</div>
                                     </div>
                                                                
 
@@ -303,10 +348,10 @@
                                         <div class="picture">
                                             <div class="judge-four"></div>
                                         </div>
-                                        <div class="name">Marta Cruz</div>
-                                        <div class="bio">Co-Founder & Director NXTP Labs</div>
+                                        <div class="name">Ignacio López</div>
+                                        <div class="bio">Co-Fundador y Director de Tecnología<br>Wormhole</div>
                                         <div class="bkg-sharp"></div>
-                                        <div class="full-bio"></div>
+                                        <div class="full-bio">Lidera el área de Investigación y Desarrollo para revolucionar la forma en que miles de empresas, organizaciones profesionales e instituciones educativas en todo el mundo utilizan la tecnología para enseñar a distancia.</div>
                                     </div>                        
 
                                 </div>
@@ -315,20 +360,21 @@
                     </li>
                     <!--# Cierro item -->
 
-                    <!-- Item 2 -->
-                    <li class="item judges-two">
+                    <!-- Item 3 -->
+                    <li class="item judges-three">
                         <div class="bkg">
                             <div class="row">
                                 <div class="span6">
 
                                     <div class="judge">
                                         <div class="picture">
-                                            <div class="judge-three"></div>
+                                            <div class="judge-five"></div>
                                         </div>
-                                        <div class="name">Santiago Do Rego</div>
-                                        <div class="bio">Periodista TN Tecno</div>
+                                        <div class="name">Leandro Cahn</div>
+                                        <div class="bio">Director de Comunicación y Desarrollo Institucional<br>Fundación Huésped</div>
                                         <div class="bkg-sharp"></div>
-                                        <div class="full-bio"></div>
+                                        <div class="full-bio">Director de comunicación y desarrollo institucional de Fundación Huésped y de la Iniciativa de Medios Latinoamericanos sobre el SIDA (IMLAS)
+</div>
                                     </div>
                                                                
 
@@ -337,15 +383,76 @@
 
                                     <div class="judge">
                                         <div class="picture">
-                                            <div class="judge-four"></div>
+                                            <div class="judge-six"></div>
                                         </div>
-                                        <div class="name">Marta Cruz</div>
-                                        <div class="bio">Co-Founder & Director NXTP Labs</div>
+                                        <div class="name">Martín Mercado</div>
+                                        <div class="bio">Director Artístico<br>Estamos Felices</div>
                                         <div class="bkg-sharp"></div>
-                                        <div class="full-bio"></div>
+                                        <div class="full-bio">Es el director artístico del sello discográfico, consultora musical y productora cultural Estamos Felices. En los últimos 10 años formó parte de la producción de innumerables ciclos y conciertos de artistas nacionales e internacionales.</div>
                                     </div>                        
 
                                 </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--# Cierro item -->
+
+
+                    <!-- Item 4 -->
+                    <li class="item judges-four">
+                        <div class="bkg">
+                            <div class="row">
+                                <div class="span6">
+
+                                    <div class="judge">
+                                        <div class="picture">
+                                            <div class="judge-seven"></div>
+                                        </div>
+                                        <div class="name">Santiago Dorrego</div>
+                                        <div class="bio">Periodista<br>TN, Canal 13 & TN Tecno</div>
+                                        <div class="bkg-sharp"></div>
+                                        <div class="full-bio">Columnista de los noticieros de TN y Canal 13, y coordinador de contenidos web del área de noticias. Además, conduce TN Tecno, programa especializado en tecnología. Es licenciado en Periodismo por la Universidad del Salvador. 
+</div>
+                                    </div>
+                                                               
+
+                                </div>
+                                <div class="span6">
+
+                                    <div class="judge">
+                                        <div class="picture">
+                                            <div class="judge-eight"></div>
+                                        </div>
+                                        <div class="name">Marta Cruz</div>
+                                        <div class="bio">Co-Fundadora y Directora Ejecutiva<br>NXTPLabs</div>
+                                        <div class="bkg-sharp"></div>
+                                        <div class="full-bio">Directora de NXTPLabs, el fondo de inversión líder en Latinoamérica, que desarrolla un programa de aceleración para equipos de emprendedores capaces de implementar proyectos dinámicos e innovadores basados en teconología.</div>
+                                    </div>                        
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--# Cierro item -->
+                    <!-- Item 5 -->
+                    <li class="item judges-five">
+                        <div class="bkg">
+                            <div class="row">
+                                <div class="span12">
+
+                                    <div class="judge">
+                                        <div class="picture">
+                                            <div class="judge-nine"></div>
+                                        </div>
+                                        <div class="name">Pablo Bererciartua</div>
+                                        <div class="bio">Director<br>Instituto Tecnológico de Buenos Aires (ITBA)</div>
+                                        <div class="bkg-sharp"></div>
+                                        <div class="full-bio">Es además, Director Fundador del Centro de Estudios Estratégicos para el Desarrollo Sostenible (CEEDS). Miembro de Directorio del Centro Argentino de Ingenieros (CAI), de ICANA, y del Foro del Sector Social.</div>
+                                    </div>
+                                                               
+
+                                </div>
+
                             </div>
                         </div>
                     </li>
@@ -375,6 +482,7 @@
         <script src="/js/owl.carousel.min.js"></script>
 
         <!--script src="/js/skrollr.menu.js"></script-->
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         
         <script type="text/javascript">
         
@@ -382,36 +490,52 @@
         $(document).ready(function() {
 
             $(function() {
+
+                $('#join-content').find('.item').hover(function() {
+                    $(this).find('.bg-join-text').stop().fadeOut(350);
+                    $(this).find('.static-full').stop().animate({opacity: '1', 'margin-top': '510px'});
+                    },
+                    function() {
+                    $(this).find('.bg-join-text').stop().fadeIn(350);
+                    $(this).find('.static-full').stop().animate({opacity: '0', 'margin-top': '490px'});
+                    }
+                );
+
+                // Judges fancy animation for full bio.
+
                 $('.judge').hover(function() {
                     $(this).stop().animate({'margin-top': '-60px'});
-                    $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '420px', transform: 'rotate(' + 0 + 'deg)'});
+                    $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '435px', transform: 'rotate(' + 0 + 'deg)'});
                     $(this).find('.name, .bio').stop().animate({color: '#00d197'});
                     $(this).find('.full-bio').stop().animate({opacity: '1'});
                 },
                 function() {
                     $(this).stop().animate({'margin-top': '0px'});
-                    $(this).find('.bkg-sharp').stop().animate({height: '55px',top: '360px',transform: 'rotate(' + -5 + 'deg)'});
+                    $(this).find('.bkg-sharp').stop().animate({height: '65px',top: '360px',transform: 'rotate(' + -3 + 'deg)'});
                     $(this).find('.name, .bio').stop().animate({color: '#371c6d'});
                     $(this).find('.full-bio').stop().animate({opacity: '0'});
                 });
 
-                $('.judge').live('touchstart', function(e){
-                    e.preventDefault();
-                    $(this).stop().animate({'margin-top': '-60px'});
-                    $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '420px', transform: 'rotate(' + 0 + 'deg)'});
-                    $(this).find('.name, .bio').stop().animate({color: '#00d197'});
-                    $(this).find('.full-bio').stop().animate({opacity: '1'});
+                // Judges fancy animation for full bio, poorly binded for multitouch devices.
+
+                // $('.judge').live('touchstart', function(e){
+                //     e.preventDefault();
+                //     $(this).stop().animate({'margin-top': '-60px'});
+                //     $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '420px', transform: 'rotate(' + 0 + 'deg)'});
+                //     $(this).find('.name, .bio').stop().animate({color: '#00d197'});
+                //     $(this).find('.full-bio').stop().animate({opacity: '1'});
                     
-                });
+                // });
 
-                $('.judge').live('touchend', function(e){
-                    e.preventDefault();
-                    $(this).stop().animate({'margin-top': '0px'});
-                    $(this).find('.bkg-sharp').stop().animate({height: '55px',top: '360px',transform: 'rotate(' + -5 + 'deg)'});
-                    $(this).find('.name, .bio').stop().animate({color: '#371c6d'});
-                    $(this).find('.full-bio').stop().animate({opacity: '0'});
 
-                });
+                // $('.judge').live('touchend', function(e){
+                //     e.preventDefault();
+                //     $(this).stop().animate({'margin-top': '0px'});
+                //     $(this).find('.bkg-sharp').stop().animate({height: '55px',top: '360px',transform: 'rotate(' + -5 + 'deg)'});
+                //     $(this).find('.name, .bio').stop().animate({color: '#371c6d'});
+                //     $(this).find('.full-bio').stop().animate({opacity: '0'});
+
+                // });
             });
 
               $.scrollIt({
@@ -444,9 +568,48 @@
 
                
                 });
+            
+
+            $('body').keyup(function (e) {
+
+                    var slideOne = $("#about-content").data('owlCarousel');
 
 
+                    if(e.keyCode==39){
+                        slideOne.next();
+                    } else if (e.keyCode==37) {
+                        slideOne.prev();
+                    }
 
+                    var slideTwo = $("#join-content").data('owlCarousel');
+
+
+                    if(e.keyCode==39){
+                        slideTwo.next();
+                    } else if (e.keyCode==37) {
+                        slideTwo.prev();
+                    }
+
+                    var slideThree = $("#timeline-content").data('owlCarousel');
+
+
+                    if(e.keyCode==39){
+                        slideThree.next();
+                    } else if (e.keyCode==37) {
+                        slideThree.prev();
+                    }
+
+
+                    var slideFour = $("#judges-content").data('owlCarousel');
+
+
+                    if(e.keyCode==39){
+                        slideFour.next();
+                    } else if (e.keyCode==37) {
+                        slideFour.prev();
+                    }
+
+            });
 
         
         });           

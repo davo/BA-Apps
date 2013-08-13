@@ -4,20 +4,76 @@
 		"selected_items":
 		[
 			[
-				"tex",
-				"text-transform"
+				"back",
+				"background-repeat"
 			],
 			[
-				"font",
-				"font-size"
+				"mar",
+				"margin-bottom"
 			],
 			[
 				"le",
 				"letter-spacing"
 			],
 			[
-				"mar",
-				"margin"
+				"pos",
+				"pos:r	position:relative"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"judges",
+				"judges-content"
+			],
+			[
+				"timel",
+				"timeline-content"
+			],
+			[
+				"po",
+				"pos	position: ${1:relative};"
+			],
+			[
+				"POS",
+				"position"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"tr",
+				"trs	transition"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"lis",
@@ -48,20 +104,12 @@
 				"z-index"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"fon",
 				"font-size"
 			],
 			[
 				"FONT",
 				"font-family"
-			],
-			[
-				"pos",
-				"position"
 			],
 			[
 				"bac",
@@ -83,21 +131,25 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 8064,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 93.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"set S",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"enable",
 				"Package Control: Enable Package"
@@ -155,10 +207,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"le",
 				"Set Syntax: LESS"
 			],
@@ -188,13 +236,18 @@
 	},
 	"file_history":
 	[
-		"/Users/davo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/index.html",
-		"/Users/davo/Dropbox/BA Apps II/landing/BA-Apps/css/landing.css",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/less/main.less",
-		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/owl.carousel.css",
-		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/notes.js",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-navbar.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/index.html",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/owl.theme.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/variables.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/animate-custom.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/bootstrap.less",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/owl.carousel.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/less/lesshat.less",
+		"/Users/davo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davo/Dropbox/BA Apps II/landing/BA-Apps/css/landing.css",
+		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/notes.js",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/OwlCarousel/owl-carousel/owl.carousel.css",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/owl.carousel.min.js",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mrvisual.info/js/scrollTo.js",
@@ -203,11 +256,9 @@
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive.less",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/jquery.sidr.light.css",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-767px-max.less",
-		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-navbar.less",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-utilities.less",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/responsive-768px-979px.less",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/css/bootsrap-responsive.css",
-		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/bootstrap/less/bootstrap.less",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/.refs/mmenu.frebsite.nl/mmenu-3.0.2/docs/examples/onepage-drag.html",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/js/jquery.sidr.js",
 		"/Users/davo/Dropbox/BA Apps II/www/BA-Apps/build/skrollr-ie/src/skrollr.ie.js",
@@ -250,7 +301,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -264,6 +315,77 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-slide-five",
+			"-slide-four",
+			"-slide-three",
+			"slide-five",
+			"slide-four",
+			"slide-three",
+			".bg-join'",
+			"bg-join",
+			"-slide-two",
+			"animated fadeInRight ",
+			"data-0",
+			"find",
+			" join-slide",
+			"bkg",
+			"join",
+			"position: static",
+			"out",
+			"<div class=\"out\">\n                                        <div class=\"picture\"></div>\n                                        <div class=\"name\"></div>\n                                        <div class=\"bio\"></div>\n                                    </div>",
+			"\"span6\">",
+			"section",
+			"museo",
+			".about",
+			"time",
+			"about",
+			"timeline",
+			"head",
+			"item",
+			"about",
+			"four",
+			"three",
+			"top left",
+			"about",
+			".about",
+			"opacity",
+			"50",
+			"500",
+			"1",
+			"@",
+			"20px",
+			"1s",
+			"<h5>",
+			"</h5>",
+			"<h5>",
+			"sect",
+			"css/",
+			"\">",
+			"\"",
+			" {",
+			"                       ",
+			" {",
+			":",
+			"                        ",
+			"                       ",
+			"                      ",
+			"                     ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			": 1",
 			"carou",
 			": 1",
 			"0.5",
@@ -320,78 +442,7 @@
 			"mm-left",
 			"mm-top",
 			"z-in",
-			"margin-left: 30px;",
-			".formSearch",
-			".formSearch ",
-			"                                        ",
-			"                                       ",
-			"                                      ",
-			"                                     ",
-			"                                    ",
-			"                                   ",
-			"                                  ",
-			"                                 ",
-			"                                ",
-			"                               ",
-			"                              ",
-			"                             ",
-			"                            ",
-			"                           ",
-			"                          ",
-			"                         ",
-			"                        ",
-			"                       ",
-			"                      ",
-			"                     ",
-			"                    ",
-			"                   ",
-			"                  ",
-			"                 ",
-			"                ",
-			"               ",
-			"                    ",
-			"                   ",
-			"                  ",
-			"                 ",
-			"                ",
-			"3px",
-			"                           ",
-			"                          ",
-			"                         ",
-			"                        ",
-			"                       ",
-			"                      ",
-			"                     ",
-			"                    ",
-			"                   ",
-			"                  ",
-			"                 ",
-			"                ",
-			"               ",
-			"              ",
-			"             ",
-			"            ",
-			"           ",
-			"          ",
-			"                                                 ",
-			"                                                ",
-			"                                               ",
-			"                                              ",
-			"                                             ",
-			"                                            ",
-			"                                           ",
-			"                                          ",
-			"                                         ",
-			"                                        ",
-			"                                       ",
-			"                                      ",
-			"                                     ",
-			"                                    ",
-			"                                   ",
-			"                                  ",
-			"                                 ",
-			"                                ",
-			"                               "
+			"margin-left: 30px;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -409,43 +460,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8064,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"rulers":
-							[
-								100
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"wrap_width": 0
-						},
-						"translation.x": 0.0,
-						"translation.y": 129.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -492,20 +508,44 @@
 		"selected_items":
 		[
 			[
-				"in",
+				"ind",
 				"index.html"
-			],
-			[
-				"ow",
-				"build/OwlCarousel/owl-carousel/owl.carousel.css"
-			],
-			[
-				"scro",
-				".refs/mrvisual.info/js/scrollTo.js"
 			],
 			[
 				"main",
 				"css/less/main.less"
+			],
+			[
+				"respo",
+				"build/bootstrap/less/responsive-navbar.less"
+			],
+			[
+				"varia",
+				"build/bootstrap/less/variables.less"
+			],
+			[
+				"ow",
+				"css/owl.theme.css"
+			],
+			[
+				"ani",
+				"css/animate-custom.css"
+			],
+			[
+				"boot",
+				"build/bootstrap/less/bootstrap.less"
+			],
+			[
+				"less",
+				"css/less/lesshat.less"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"scro",
+				".refs/mrvisual.info/js/scrollTo.js"
 			],
 			[
 				"skorl",
@@ -569,10 +609,10 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":

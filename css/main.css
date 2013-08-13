@@ -62,6 +62,9 @@ select,
 textarea {
   color: #222;
 }
+body {
+  background: #CECECE;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -228,9 +231,6 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
-.navigation {
-  display: none;
-}
 header {
   display: block;
 }
@@ -323,6 +323,42 @@ header .branding .logo-apps h1 a {
 #page section.judges {
   background-color: #371c6d;
 }
+#page-static section {
+  padding-top: 250px;
+  height: 800px;
+}
+#page-static section.faq {
+  background-color: #CECECE;
+}
+#page-static section h1 {
+  font-family: "Museo 700", "Arial Black", "Arial", sans;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #00d7c5;
+}
+#page-static section h2 {
+  font-family: "Museo 700", "Arial Black", "Arial", sans;
+  color: #7a7a7a;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#page-static section p {
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+#page-static section a {
+  font-weight: bold;
+  color: #d826b1;
+  text-decoration: underline;
+}
+#page-static section a:hover {
+  text-decoration: none;
+}
 section {
   padding-top: 0px;
   height: 1100px;
@@ -404,6 +440,7 @@ section.home {
 .join-head,
 .timeline-head,
 .judges-head,
+.bg-phone-bkg,
 .bg-join,
 .bg-join-text,
 .bg-join-slide-two,
@@ -552,24 +589,90 @@ section.home {
   z-index: 5;
   background: url(/img/home_movil_line_2.png) no-repeat center 270px;
 }
-.bkg .bg-join {
+.bkg .bg-phone-bkg {
+  position: absolute;
+  z-index: -1;
+  background: url(/img/join_bkg_hidden.png) no-repeat center -30px;
+}
+.static {
+  text-align: center;
+  font-family: "Museo 700", "Helvetica", "Arial", _sans;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  z-index: 1000;
+  padding-top: 450px;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  padding-left: 30px;
+}
+.static-full {
+  position: absolute;
+  height: 90px;
+  text-align: center;
+  background-color: #cecece;
+  background-color: rgba(206, 206, 206, 0.95);
+  padding: 10px 0px;
+  font-family: "Museo 700", "Helvetica", "Arial", _sans;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  z-index: 10;
+  margin-top: 490px;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.static-full h5 {
+  font-size: 40px !important;
+  line-height: 10px;
+  margin-top: -30px;
+  text-transform: none !important;
+}
+.static-full p {
+  color: #000097;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.static-full .bkg-sharp {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 450px;
+  height: 40px;
+  top: -22px;
+  background-color: #000097;
+  z-index: -1;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+.slide-one .bg-join {
   z-index: 0;
   margin-left: -108px;
   background: url(/img/join_bkg.png) no-repeat center 220px;
 }
-.bkg .bg-join-text {
+.slide-one .bg-join-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   z-index: 3;
-  background: url(/img/join_text.png) no-repeat center 500px;
+  background: url(/img/join_text.png) no-repeat center 400px;
 }
-.bkg .bg-join-slide-two {
+.slide-two .bg-join {
   z-index: 0;
   margin-left: 10px;
   background: url(/img/join_bkg_slide_two.png) no-repeat center 220px;
 }
-.bkg .bg-join-text-slide-two {
+.slide-two .bg-join-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -577,44 +680,44 @@ section.home {
   margin-left: -40px;
   background: url(/img/join_text_slide_two.png) no-repeat center 420px;
 }
-.bkg .bg-join-slide-three {
+.slide-three .bg-join {
   z-index: 0;
   margin-left: -100px;
   background: url(/img/join_bkg_slide_three.png) no-repeat center 220px;
 }
-.bkg .bg-join-text-slide-three {
+.slide-three .bg-join-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   z-index: 3;
-  margin-left: -40px;
-  background: url(/img/join_text_slide_three.png) no-repeat center 420px;
+  margin-left: 30px;
+  background: url(/img/join_text_slide_three.png) no-repeat center 360px;
 }
-.bkg .bg-join-slide-four {
+.slide-four .bg-join {
   z-index: 0;
   margin-left: -100px;
   background: url(/img/join_bkg_slide_four.png) no-repeat center 220px;
 }
-.bkg .bg-join-text-slide-four {
+.slide-four .bg-join-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   z-index: 3;
-  margin-left: -40px;
+  margin-left: -200px;
   background: url(/img/join_text_slide_four.png) no-repeat center 420px;
 }
-.bkg .bg-join-slide-five {
+.slide-five .bg-join {
   z-index: 0;
   margin-left: -100px;
   background: url(/img/join_bkg_slide_five.png) no-repeat center 220px;
 }
-.bkg .bg-join-text-slide-five {
+.slide-five .bg-join-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   z-index: 3;
-  margin-left: -40px;
-  background: url(/img/join_text_slide_five.png) no-repeat center 420px;
+  margin-left: -200px;
+  background: url(/img/join_text_slide_five.png) no-repeat center 350px;
 }
 #timeline-content .owl-controlls {
   top: 830px;
@@ -742,16 +845,16 @@ section.home {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 300px;
-  height: 55px;
+  width: 320px;
+  height: 65px;
   top: 360px;
   background-color: #00d197;
   z-index: -1;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 #judges-content .judges-one,
 #judges-content .judges-two,
@@ -809,7 +912,7 @@ section.home {
   -moz-background-clip: padding;
   border-radius: 345px;
   background-clip: padding-box;
-  background: url(/img/judge-dorego.jpg) no-repeat center center;
+  background: url(/img/judge-carbonell.jpg) no-repeat center center;
   background-size: 100%;
   z-index: -1;
 }
@@ -825,7 +928,87 @@ section.home {
   -moz-background-clip: padding;
   border-radius: 345px;
   background-clip: padding-box;
+  background: url(/img/judge-lopez.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: -1;
+}
+#judges-content .judge-five {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 345px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 345px;
+  -moz-background-clip: padding;
+  border-radius: 345px;
+  background-clip: padding-box;
+  background: url(/img/judge-cahn.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: -1;
+}
+#judges-content .judge-six {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 345px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 345px;
+  -moz-background-clip: padding;
+  border-radius: 345px;
+  background-clip: padding-box;
+  background: url(/img/judge-mercado.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: -1;
+}
+#judges-content .judge-seven {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 345px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 345px;
+  -moz-background-clip: padding;
+  border-radius: 345px;
+  background-clip: padding-box;
+  background: url(/img/judge-dorego.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: -1;
+}
+#judges-content .judge-eight {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 345px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 345px;
+  -moz-background-clip: padding;
+  border-radius: 345px;
+  background-clip: padding-box;
   background: url(/img/judge-cruz.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: -1;
+}
+#judges-content .judge-nine {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 345px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 345px;
+  -moz-background-clip: padding;
+  border-radius: 345px;
+  background-clip: padding-box;
+  background: url(/img/judge-bereciartua.jpg) no-repeat center center;
   background-size: 100%;
   z-index: -1;
 }
@@ -852,15 +1035,18 @@ section.home {
   font-size: 12px;
   color: #371c6d;
   letter-spacing: -1px;
+  line-height: 14px;
+  margin-top: 8px;
 }
 #judges-content .full-bio {
   font-family: "Museo 700", "Helvetica", "Arial", _sans;
   font-size: 11px;
+  line-height: 18px;
   text-align: center;
   color: #fff;
   padding-top: 25px;
   display: block;
-  width: 200px;
+  width: 250px;
   height: 0px;
   margin: 0 auto;
   -webkit-opacity: 0;
