@@ -14,16 +14,12 @@ var Modernizr = window.Modernizr;
 
 
 // $(function() {
-
 //   var page = $("#page");
 //   sections = ['home', 'about', 'join', 'prizes', 'timeline'];
-
 //   for ( var a = 0, l = sections.length; a < l; a++ )
 //       {
 //         var id = sections[a];
-        
 //       }
-
 // }
 
 
@@ -111,23 +107,26 @@ $(document).ready(function() {
         });
     
 
-    $('body').keyup(function (e) {
+    $(window).keydown(function(e) {
 
             var slideOne = $("#about-content").data('owlCarousel');
 
+            var activeSlide = "join";
 
-            if(e.keyCode==39){
+
+
+            if(e.keyCode==39 && activeSlide == "about"){
                 slideOne.next();
-            } else if (e.keyCode==37) {
+            } else if (e.keyCode==37 && activeSlide == "about") {
                 slideOne.prev();
             }
 
             var slideTwo = $("#join-content").data('owlCarousel');
 
 
-            if(e.keyCode==39){
+            if(e.keyCode==39 && activeSlide == "join"){
                 slideTwo.next();
-            } else if (e.keyCode==37) {
+            } else if (e.keyCode==37 && activeSlide == "join") {
                 slideTwo.prev();
             }
 
