@@ -440,6 +440,17 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  header {
+    display: block;
+  }
+  header .branding {
+    margin-top: 20px !important;
+  }
+  header .branding .logo-apps h1 a {
+    display: block;
+    width: 229px !important;
+    height: 144px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {

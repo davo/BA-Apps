@@ -55,13 +55,13 @@
                       </a>
                       <div class="nav-collapse">
                         <ul class="nav">
-                            <li><a data-scroll-nav="0" href="javascript:void();">Inicio</a></li>
-                            <li><a data-scroll-nav="1" href="javascript:void();">¿Qué es?</a></li>
-                            <li><a data-scroll-nav="2" href="javascript:void();">Participá</a></li>
-                            <li><a data-scroll-nav="3" href="javascript:void();">Cronograma</a></li>
-                            <li><a data-scroll-nav="4" href="javascript:void();">Jurado</a></li>
-                            <li><a href="bases.html">Bases y condiciones</a></li>
-                            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a data-scroll-nav="0" href="/#inicio">Inicio</a></li>
+                            <li><a data-scroll-nav="1" href="/#que-es">¿Qué es?</a></li>
+                            <li><a data-scroll-nav="2" href="/#participa">Participá</a></li>
+                            <li><a data-scroll-nav="3" href="/#cronograma">Cronograma</a></li>
+                            <li><a data-scroll-nav="4" href="/#jurado">Jurado</a></li>
+                            <li><a href="/bases.html">Bases y condiciones</a></li>
+                            <li><a href="/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                         </ul>
                       </div><!-- /.nav-collapse -->
                     </div><!-- /.container -->
@@ -78,14 +78,22 @@
 
 
   <div id="page">
-
       <section class="bg-image home" id="home" data-scroll-index="0">
+        <a id="inicio" name="inicio"></a>
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <h2>Segundo concurso de aplicaciones</h2>
-                    <h3>de la Ciudad de Buenos Aires</h3>
-                    <h5>Agosto / Diciembre <br>2013</h5>
+                    <div class="home-content">
+                        <div class="vimeo">
+                            <iframe src="http://player.vimeo.com/video/71979702?title=0&amp;byline=0&amp;portrait=0" width="267" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>
+                        <div class="bkg-sharp"></div>
+                        <h2 class="animated fadeInUp">Segundo concurso de aplicaciones</h2>
+                        <h3 class="animated fadeInUp">de la Ciudad de Buenos Aires</h3>
+                        <div class="call animated fadeInDown">
+                            <h5><a href="#modal" role="button" data-toggle="modal" class="btn-alt btn-alt-outline">Suscribite</a></h5><span>Suscribite ahora para recibir todas las novedades.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="animated fadeInRight bg-phone-text"></div>
@@ -98,6 +106,7 @@
       </section>
 
       <section class="about" id="about" data-scroll-index="1">
+        <a id="que-es" name="que-es"></a>
         <div class="container">
             <article class="row">
                 <ul class="content owl-carousel owl-theme" id="about-content">
@@ -142,6 +151,7 @@
       </section>
 
       <section class="bg-image join" id="join" data-scroll-index="2">
+        <a id="participa" name="participa"></a>
         <div class="container">
             <article class="row">
                 <ul class="content owl-carousel owl-theme" id="join-content">
@@ -221,6 +231,7 @@
       </section>
         
       <section class="bg-image timeline" data-scroll-index="3">
+        <a id="cronograma" name="cronograma"></a>
         <div class="container">
             <article class="row">
                 <ul class="content owl-carousel owl-theme" id="timeline-content">
@@ -231,7 +242,7 @@
                         <h5>
                           <span class="animated fadeIn large">Registro</span><span class="highlight normal">y postulación</span><span class="highlight">de aplicaciones</span>
                         </h5>
-                        <p><span class="date">12 de agosto al 15 de noviembre</p></span>
+                        <p><span class="date">2 de septiembre al 15 de noviembre</p></span>
                         <div class="bkg-sharp"></div>
                         <div class="animated fadeInRight stage">Etapa 1</div>
                     </li>
@@ -271,20 +282,20 @@
             </article>
             <div class="bg-timeline-lines" data-0="background-position: center 50px;" data-end="background-position: center 1000px"></div>
             <div class="bg-timeline-circle"></div>
-            <div class="bg-timeline-shapes" data-0="filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1;"
-            data-end="filter: alpha(opacity=20); -moz-opacity: .2; -khtml-opacity: .2; opacity: .2;"></div>
+            <div class="bg-timeline-shapes"></div>
             <div class="judges-head"></div>
         </div>
       </section>
 
       <section class="bg-image judges" data-scroll-index="4">
+        <a id="jurado" name="jurado"></a>
         <div class="container">
-                      <article class="row">
+            <article class="row">
                 <ul class="content owl-carousel owl-theme" id="judges-content">
                     <li class="item">
                         <div class="bkg">
                             <div class="animated fadeInRight bg-judges-text">Jurado</div>
-                            <div class="bg-judges-lines" data-0="background-position: center 50px;" data-end="background-position: center 1000px"></div>
+                            <div class="bg-judges-lines"></div>
             <div class="bg-judges-circle"></div>
             <div class="bg-judges-shapes" data-0="filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1;"
             data-end="filter: alpha(opacity=20); -moz-opacity: .2; -khtml-opacity: .2; opacity: .2;"></div>
@@ -379,8 +390,7 @@
                                         <div class="name">Leandro Cahn</div>
                                         <div class="bio">Director de Comunicación y Desarrollo Institucional<br>Fundación Huésped</div>
                                         <div class="bkg-sharp"></div>
-                                        <div class="full-bio">Director de comunicación y desarrollo institucional de Fundación Huésped y de la Iniciativa de Medios Latinoamericanos sobre el SIDA (IMLAS)
-</div>
+                                        <div class="full-bio">Director de comunicación y desarrollo institucional de Fundación Huésped y de la Iniciativa de Medios Latinoamericanos sobre el SIDA (IMLAS)</div>
                                     </div>
                                                                
 
@@ -473,7 +483,18 @@
 
 
     </div>
+    
+    <!-- Doppler Modal Signup -->
 
+    <div class="modal hide fade" id="modal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3>Agrega tus datos</h3>
+        </div>
+        <div class="modal-body">
+          <iframe id="doppler_subscription" src="http://app2.fromdoppler.com/Lists/FormProcessing/Form?idForm=jsGyTop0GmjUZtKphc4BxQ%3d%3d"  height="335" width="500" scrolling="yes" frameborder="no" style="overflow:scroll"></iframe>
+        </div>
+    </div>
         <!--script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script-->
         
         <script src="/js/jquery.min.js"></script>
@@ -485,11 +506,13 @@
         <!--script src="/js/skrollr.min.js"></script-->
         <script src="/js/scrollIt.js"></script>
         <script src="/js/owl.carousel.min.js"></script>
+
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         
 
         <!--
         <script src="/js/skrollr.menu.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        
          
         <script src="js/jquery.hammer.min.js"></script>
         <script src="js/main.js"></script>

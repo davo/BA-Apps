@@ -85,6 +85,7 @@ $(document).ready(function() {
         activeClass: 'active'
       });
 
+
       // var s = skrollr.init({
       //   edgeStrategy: 'set',
       //   forceHeight: false
