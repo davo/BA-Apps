@@ -11,12 +11,6 @@
 @import url('animate-custom.css');
 html {
   -webkit-font-smoothing: antialiased;
-  -webkit-webkit-text-size-adjust: 100%;
-  -moz-webkit-text-size-adjust: 100%;
-  -ms-webkit-text-size-adjust: 100%;
-  -o-webkit-text-size-adjust: 100%;
-  webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
   moz-backface-visibility: hidden;
@@ -24,6 +18,39 @@ html {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
+@font-face {
+  font-family: 'Museo 700';
+  src: url('/fonts/museo_slab_700-webfont.eot');
+  src: url('/fonts/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_700-webfont.woff') format('woff'), url('/fonts/museo_slab_700-webfont.ttf') format('truetype'), url('/fonts/museo_slab_700-webfont.svg#museo_slab700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo 900';
+  src: url('/fonts/museo_slab_900-webfont.eot');
+  src: url('/fonts/museo_slab_900-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_900-webfont.woff') format('woff'), url('/fonts/museo_slab_900-webfont.ttf') format('truetype'), url('/fonts/museo_slab_900-webfont.svg#museo_slab900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/gotham.eot');
+  src: url('/fonts/gotham.eot?#iefix') format('embedded-opentype'), url('/fonts/gotham.woff') format('woff'), url('/fonts/gotham.ttf') format('truetype'), url('/fonts/gotham.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+::-moz-selection {
+  color: gold;
+  background: red;
+}
+::selection {
+  color: gold;
+  background: red;
+}
+/*
+ * Based on HTML5 Boilerplate
+ *
+ */
 article,
 aside,
 details,
@@ -37,21 +64,6 @@ section,
 summary {
   display: block;
 }
-::-moz-selection {
-  color: gold;
-  background: red;
-}
-::selection {
-  color: gold;
-  background: red;
-}
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -63,13 +75,8 @@ textarea {
   color: #222;
 }
 body {
-  background: #CECECE;
+  background: #cecece;
 }
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -210,27 +217,6 @@ textarea {
 .clearfix {
   *zoom: 1;
 }
-@font-face {
-  font-family: 'Museo 700';
-  src: url('/fonts/museo_slab_700-webfont.eot');
-  src: url('/fonts/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_700-webfont.woff') format('woff'), url('/fonts/museo_slab_700-webfont.ttf') format('truetype'), url('/fonts/museo_slab_700-webfont.svg#museo_slab700') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Museo 900';
-  src: url('/fonts/museo_slab_900-webfont.eot');
-  src: url('/fonts/museo_slab_900-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/museo_slab_900-webfont.woff') format('woff'), url('/fonts/museo_slab_900-webfont.ttf') format('truetype'), url('/fonts/museo_slab_900-webfont.svg#museo_slab900') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('/fonts/gotham.eot');
-  src: url('/fonts/gotham.eot?#iefix') format('embedded-opentype'), url('/fonts/gotham.woff') format('woff'), url('/fonts/gotham.ttf') format('truetype'), url('/fonts/gotham.svg#Gotham-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 header {
   display: block;
 }
@@ -302,6 +288,9 @@ header .branding .logo-apps h1 a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* ==========================================================================
+   Basic setup for each section
+   ========================================================================== */
 #page section {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -309,7 +298,7 @@ header .branding .logo-apps h1 a {
   box-sizing: border-box;
 }
 #page section.home {
-  background-color: #CECECE;
+  background-color: #cecece;
 }
 #page section.about {
   background-color: #032ea7;
@@ -328,7 +317,7 @@ header .branding .logo-apps h1 a {
   height: 800px;
 }
 #page-static section.faq {
-  background-color: #CECECE;
+  background-color: #cecece;
 }
 #page-static section h1 {
   font-family: "Museo 700", "Arial Black", "Arial", sans;
@@ -609,11 +598,11 @@ section.home {
 }
 .static-full {
   position: absolute;
-  height: 90px;
+  height: 70px;
   text-align: center;
   background-color: #cecece;
   background-color: rgba(206, 206, 206, 0.95);
-  padding: 10px 0px;
+  padding: 15px 0px;
   font-family: "Museo 700", "Helvetica", "Arial", _sans;
   font-size: 12px;
   line-height: 18px;
@@ -629,12 +618,14 @@ section.home {
   line-height: 10px;
   margin-top: -30px;
   text-transform: none !important;
+  padding-top: 50px;
 }
 .static-full p {
   color: #000097;
   display: block;
   width: 400px;
   margin: 0 auto;
+  padding-top: 50px;
   text-align: center;
 }
 .static-full .bkg-sharp {
@@ -645,7 +636,7 @@ section.home {
   margin-right: auto;
   display: block;
   width: 450px;
-  height: 40px;
+  height: 0px;
   top: -22px;
   background-color: #000097;
   z-index: -1;

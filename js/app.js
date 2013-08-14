@@ -31,10 +31,14 @@ $(document).ready(function() {
         $('#join-content').find('.item').hover(function() {
             $(this).find('.bg-join-text').stop().fadeOut(350);
             $(this).find('.static-full').stop().animate({opacity: '1', 'margin-top': '510px'});
+            $(this).find('.bkg-sharp').stop().animate({height: '40px'});
+            $(this).find('h5, p').stop().animate({'padding-top': '0px'});
             },
             function() {
             $(this).find('.bg-join-text').stop().fadeIn(350);
             $(this).find('.static-full').stop().animate({opacity: '0', 'margin-top': '490px'});
+            $(this).find('.bkg-sharp').stop().animate({height: '0px'});
+            $(this).find('h5, p').stop().animate({'padding-top': '50px'});
             }
         );
 
