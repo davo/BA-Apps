@@ -461,6 +461,12 @@ header {
         }
 }
 
+.page-static {
+    header {
+        position: static
+    }
+}
+
 #page-static {
 
 @base: #00d7c5;
@@ -468,7 +474,6 @@ header {
 @title: lighten(@complement, 15%);
 
     section {
-        padding-top: 250px;
         height: auto;
 
         &.faq {
@@ -492,29 +497,52 @@ header {
             padding-bottom: 10px;
         }
 
-        p {
-            font-size: 16px;
-            line-height: 30px;
-            padding-left: 5px;
-            padding-right: 25px;
 
-        }
 
         ul {
             margin: 0;
             padding: 0;
             li {
-                list-style: none;
+                list-style-type: none;
             }
         }
+
+        p, .alt-list li {
+            font-size: 16px;
+            line-height: 30px;
+            padding-left: 5px;
+            padding-right: 25px;
+        }
+
+        p:last-child {
+            padding-bottom: 350px;
+        }
+
+        ul.alt-list {
+            margin: 10px;
+            padding: 8px;
+                li {
+                    list-style-type: circle;
+                    margin: 10px;
+                    padding: 8px;
+                }
+            }
 
         a {
             font-weight: bold;
             color: @complement;
             text-decoration: underline;
-        &:hover{
-            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
         }
+
+        .back {
+
+            font-size: 12px;
+            color: lighten(@title, 15%);
+            padding-left: 8px;
+
         }
 
     }

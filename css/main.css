@@ -378,8 +378,10 @@ header .branding .logo-apps h1 a {
 #page section.judges {
   background-color: #371c6d;
 }
+.page-static header {
+  position: static;
+}
 #page-static section {
-  padding-top: 250px;
   height: auto;
 }
 #page-static section.faq {
@@ -400,18 +402,31 @@ header .branding .logo-apps h1 a {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-#page-static section p {
-  font-size: 16px;
-  line-height: 30px;
-  padding-left: 5px;
-  padding-right: 25px;
-}
 #page-static section ul {
   margin: 0;
   padding: 0;
 }
 #page-static section ul li {
-  list-style: none;
+  list-style-type: none;
+}
+#page-static section p,
+#page-static section .alt-list li {
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+#page-static section p:last-child {
+  padding-bottom: 350px;
+}
+#page-static section ul.alt-list {
+  margin: 10px;
+  padding: 8px;
+}
+#page-static section ul.alt-list li {
+  list-style-type: circle;
+  margin: 10px;
+  padding: 8px;
 }
 #page-static section a {
   font-weight: bold;
@@ -420,6 +435,11 @@ header .branding .logo-apps h1 a {
 }
 #page-static section a:hover {
   text-decoration: none;
+}
+#page-static section .back {
+  font-size: 12px;
+  color: #71a0ff;
+  padding-left: 8px;
 }
 section {
   padding-top: 0px;
