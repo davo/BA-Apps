@@ -25,3 +25,132 @@ var Modernizr = window.Modernizr;
 //       }
 
 // }
+
+
+
+$(document).ready(function() {
+
+    $(function() {
+
+        $('#join-content').find('.item').hover(function() {
+            $(this).find('.bg-join-text').stop().fadeOut(350);
+            $(this).find('.static-full').stop().animate({opacity: '1', 'margin-top': '510px'});
+            },
+            function() {
+            $(this).find('.bg-join-text').stop().fadeIn(350);
+            $(this).find('.static-full').stop().animate({opacity: '0', 'margin-top': '490px'});
+            }
+        );
+
+        // Judges fancy animation for full bio.
+
+        $('.judge').hover(function() {
+            $(this).stop().animate({'margin-top': '-60px'});
+            $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '435px', transform: 'rotate(' + 0 + 'deg)'});
+            $(this).find('.name, .bio').stop().animate({color: '#00d197'});
+            $(this).find('.full-bio').stop().animate({opacity: '1'});
+        },
+        function() {
+            $(this).stop().animate({'margin-top': '0px'});
+            $(this).find('.bkg-sharp').stop().animate({height: '65px',top: '360px',transform: 'rotate(' + -3 + 'deg)'});
+            $(this).find('.name, .bio').stop().animate({color: '#371c6d'});
+            $(this).find('.full-bio').stop().animate({opacity: '0'});
+        });
+
+        // Judges fancy animation for full bio, poorly binded for multitouch devices.
+
+        // $('.judge').live('touchstart', function(e){
+        //     e.preventDefault();
+        //     $(this).stop().animate({'margin-top': '-60px'});
+        //     $(this).find('.bkg-sharp').stop().animate({height: '2px', top: '420px', transform: 'rotate(' + 0 + 'deg)'});
+        //     $(this).find('.name, .bio').stop().animate({color: '#00d197'});
+        //     $(this).find('.full-bio').stop().animate({opacity: '1'});
+            
+        // });
+
+
+        // $('.judge').live('touchend', function(e){
+        //     e.preventDefault();
+        //     $(this).stop().animate({'margin-top': '0px'});
+        //     $(this).find('.bkg-sharp').stop().animate({height: '55px',top: '360px',transform: 'rotate(' + -5 + 'deg)'});
+        //     $(this).find('.name, .bio').stop().animate({color: '#371c6d'});
+        //     $(this).find('.full-bio').stop().animate({opacity: '0'});
+
+        // });
+    });
+
+      $.scrollIt({
+        easing: 'elasout', 
+        scrollTime: 700,
+        activeClass: 'active'
+      });
+
+      // var s = skrollr.init({
+      //   edgeStrategy: 'set',
+      //   forceHeight: false
+      // });
+
+      $("#about-content, #join-content, #timeline-content, #judges-content").owlCarousel({
+       
+            navigation : false,
+            autoPlay: false,
+
+            goToFirst: true,
+       
+            slideSpeed : 500,
+            paginationSpeed : 400,
+       
+            items : 1, 
+            itemsDesktop : false,
+            itemsDesktopSmall : false,
+            itemsTablet : false,
+            itemsMobile : false,
+            responsive: true
+
+       
+        });
+    
+
+    $('body').keyup(function (e) {
+
+            var slideOne = $("#about-content").data('owlCarousel');
+
+
+            if(e.keyCode==39){
+                slideOne.next();
+            } else if (e.keyCode==37) {
+                slideOne.prev();
+            }
+
+            var slideTwo = $("#join-content").data('owlCarousel');
+
+
+            if(e.keyCode==39){
+                slideTwo.next();
+            } else if (e.keyCode==37) {
+                slideTwo.prev();
+            }
+
+            var slideThree = $("#timeline-content").data('owlCarousel');
+
+
+            if(e.keyCode==39){
+                slideThree.next();
+            } else if (e.keyCode==37) {
+                slideThree.prev();
+            }
+
+
+            var slideFour = $("#judges-content").data('owlCarousel');
+
+
+            if(e.keyCode==39){
+                slideFour.next();
+            } else if (e.keyCode==37) {
+                slideFour.prev();
+            }
+
+    });
+
+
+});    
