@@ -383,12 +383,17 @@ header .branding .logo-apps h1 a {
 }
 #page-static section {
   height: auto;
+  overflow: auto;
 }
 #page-static section.faq {
   background-color: #cecece;
 }
-#page-static section h1 {
+#page-static section h1,
+#page-static section h2,
+#page-static section h3 {
   font-family: "Museo 700", "Arial Black", "Arial", sans;
+}
+#page-static section h1 {
   font-size: 40px;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -396,11 +401,16 @@ header .branding .logo-apps h1 a {
   border-bottom: 2px solid #00d7c5;
 }
 #page-static section h2 {
-  font-family: "Museo 700", "Arial Black", "Arial", sans;
   color: #246dff;
   font-size: 25px;
   padding-top: 50px;
   padding-bottom: 10px;
+}
+#page-static section h3 {
+  color: #71a0ff;
+  font-size: 20px;
+  padding-top: 0px;
+  padding-bottom: 5px;
 }
 #page-static section ul {
   margin: 0;
@@ -410,7 +420,8 @@ header .branding .logo-apps h1 a {
   list-style-type: none;
 }
 #page-static section p,
-#page-static section .alt-list li {
+#page-static section .alt-list li,
+#page-static section strong {
   font-size: 16px;
   line-height: 30px;
   padding-left: 5px;
@@ -1287,7 +1298,8 @@ section.home .home-content .call span {
   }
   section.home .home-content h2,
   section.home .home-content h3,
-  section.home .home-content h5 {
+  section.home .home-content h5,
+  section.home .home-content .call {
     position: absolute;
     right: 75px;
     font-family: "Gotham", "Helvetica Neue", "Helvetica", sans-serif;
@@ -1313,13 +1325,20 @@ section.home .home-content .call span {
     line-height: 18px;
     color: #8d8d8d;
   }
-  section.home .home-content h5 {
-    top: 540px;
-    right: 49px;
+  section.home .home-content .call {
+    top: 600px;
+  }
+  section.home .home-content .call h5 {
+    display: block;
+    font-size: 16px;
     width: auto;
-    font-size: 20px;
     line-height: 18px;
-    color: #fffeff;
+  }
+  section.home .home-content .call span {
+    font-size: 11px;
+    top: 695px;
+    letter-spacing: 0px;
+    font-weight: normal;
   }
   .bg-phone-line-one,
   .bg-phone-line-two,

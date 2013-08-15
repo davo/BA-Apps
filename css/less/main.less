@@ -475,13 +475,17 @@ header {
 
     section {
         height: auto;
+        overflow: auto;
 
         &.faq {
                 background-color: @basicGrey;
             }
 
-        h1 {
+        h1, h2, h3 {
             font-family: "Museo 700", "Arial Black", "Arial", sans;
+        }
+
+        h1 {
             font-size: 40px;
             padding-top: 50px;
             padding-bottom: 20px;
@@ -490,13 +494,18 @@ header {
         }
 
         h2 {
-            font-family: "Museo 700", "Arial Black", "Arial", sans;
             color: @title;
             font-size: 25px;
             padding-top: 50px;
             padding-bottom: 10px;
         }
 
+        h3 {
+            color: lighten(@title, 15%);
+            font-size: 20px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+        }
 
 
         ul {
@@ -507,7 +516,7 @@ header {
             }
         }
 
-        p, .alt-list li {
+        p, .alt-list li, strong {
             font-size: 16px;
             line-height: 30px;
             padding-left: 5px;
@@ -1457,7 +1466,8 @@ section.home {
 
             h2,
             h3, 
-            h5 {
+            h5,
+            .call {
                 position: absolute;
                 right: 75px;
                 font-family:"Gotham","Helvetica Neue","Helvetica",sans-serif;
@@ -1483,14 +1493,22 @@ section.home {
                 line-height: 18px;
                 color: #8d8d8d;
             }
-            h5 {
-                top: 540px;
-                right: 49px;
-                width: auto;
-                font-size: 20px;
-                line-height: 18px;
-                color: #fffeff;
-            }
+            .call {
+                top: 600px;
+
+                h5 {
+                    display: block;
+                    font-size: 16px;
+                    width: auto;
+                    line-height: 18px;
+                }
+                span {
+                    font-size: 11px;
+                    top: 695px;
+                    letter-spacing: 0px;
+                    font-weight: normal;
+                } 
+        }
         }
     // Close section.home
     }
