@@ -1,0 +1,207 @@
+/// iOS Media Queries
+
+/// iPhone v(4,4S) portrait
+@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+html {
+        -webkit-user-select:             none;
+    }
+    section {
+        zoom: .5;
+    }
+
+header {
+    padding-bottom: 0px;
+
+    .branding {
+        margin-top: 0px;
+
+        .logo-apps h1 a {
+
+            text-indent: -9999px;
+            margin-left: 0px;
+
+            display: block;
+            width: 120px;
+            height: 75px;
+            background-image:url(/img/logo-apps.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+    }
+
+}
+    header .header-gcba {
+        height: 40px;
+        padding: 3px 0;
+    }
+
+    header .header-gcba .logo {
+        width:172px;
+        height:33px;
+        background:url(/img/logo-normal-2x-landscape.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        margin-left: 7px;
+    }
+    header .header-gcba h2.slogan {
+        font-size:8px;
+        margin-top: 13px;
+        letter-spacing:-1px;
+        margin-right: 5px;
+    }
+
+
+
+    section {
+        height: 800px;
+    }
+    section.home {
+        width: 100%;
+        background-position: center -230px;
+        background-size: 480%;
+        background-repeat: no-repeat;
+    }
+    .bg-phone-pat {
+        margin-left: 55px;
+        margin-top: 110px;
+        width: 200px;
+        height: 266px;
+        z-index: 500;
+        background-size: cover;
+    }
+    .bg-phone-line-one {
+        margin-left: 68px;
+        margin-top: 140px;
+        width: 184px;
+        height: 259px;
+        z-index: 500;
+        background-size: cover;
+    }
+    .bg-phone-line-two {
+        margin-left: 56px;
+        margin-top: 107px;
+        width: 202px;
+        height: 259px;
+        z-index: 500;
+        background-size: cover;
+    }
+}
+
+/// iPhone v(4/4S) landscape
+@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    header {
+        padding-bottom: 40px;
+    }
+    header .header-gcba {
+        height: 33px;
+        padding: 3px 0;
+    }
+    header .header-gcba .logo {
+        width:172px;
+        height:33px;
+        background:url(/img/logo-normal-2x-landscape.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        margin-left: 7px;
+    }
+    header .header-gcba h2.slogan {
+        font-size:10px;
+        margin-top: 10px;
+        letter-spacing:-1px;
+        margin-right: 5px;
+    }
+header {
+    padding-bottom: 0px;
+
+    .branding {
+        margin-top: 0px;
+
+        .logo-apps h1 a {
+
+            text-indent: -9999px;
+            margin-left: 0px;
+
+            display: block;
+            width: 120px;
+            height: 75px;
+            background-image:url(/img/logo-apps.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+    }
+
+}
+        section {
+        height: 600px;
+    }
+    section.home {
+        width: 100%;
+        background-position: center -230px;
+        background-size: 350%;
+        background-repeat: no-repeat;
+    }
+    .bg-phone-pat {
+        margin-left: 55px;
+        margin-top: 110px;
+        width: 200px;
+        height: 266px;
+        z-index: 500;
+        background-size: cover;
+    }
+    .bg-phone-line-one {
+        margin-left: 68px;
+        margin-top: 140px;
+        width: 184px;
+        height: 259px;
+        z-index: 500;
+        background-size: cover;
+    }
+    .bg-phone-line-two {
+        margin-left: 56px;
+        margin-top: 107px;
+        width: 202px;
+        height: 259px;
+        z-index: 500;
+        background-size: cover;
+    }
+}
+
+/// iPhone v(*) portrait
+/// test: black text
+@media all and (max-device-width: 480px) and (orientation: portrait)  {
+  a {
+    
+  }
+}
+
+/// iPhone v(*) landscape
+/// test: orange text
+@media all and (max-device-width: 480px) and (orientation: landscape)  {
+  a {
+    color: orange;
+  }
+}
+
+/// iPad portrait
+/// test: yellow text
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  a {
+    color: yellow;
+  }
+}
+
+/// iPad landscape
+/// test: purple text
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  a {
+    color:  purple;
+  }
+}

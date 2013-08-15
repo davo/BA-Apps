@@ -112,49 +112,7 @@ $(document).ready(function() {
         });
     
 
-    $(window).keydown(function(e) {
 
-            var slideOne = $("#about-content").data('owlCarousel');
-
-            var activeSlide = "join";
-
-
-
-            if(e.keyCode==39 && activeSlide == "about"){
-                slideOne.next();
-            } else if (e.keyCode==37 && activeSlide == "about") {
-                slideOne.prev();
-            }
-
-            var slideTwo = $("#join-content").data('owlCarousel');
-
-
-            if(e.keyCode==39 && activeSlide == "join"){
-                slideTwo.next();
-            } else if (e.keyCode==37 && activeSlide == "join") {
-                slideTwo.prev();
-            }
-
-            var slideThree = $("#timeline-content").data('owlCarousel');
-
-
-            if(e.keyCode==39){
-                slideThree.next();
-            } else if (e.keyCode==37) {
-                slideThree.prev();
-            }
-
-
-            var slideFour = $("#judges-content").data('owlCarousel');
-
-
-            if(e.keyCode==39){
-                slideFour.next();
-            } else if (e.keyCode==37) {
-                slideFour.prev();
-            }
-
-    });
 
 
 });    

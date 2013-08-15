@@ -588,6 +588,7 @@ section.home .home-content .call h5 {
   font-size: 16px;
   width: auto;
   line-height: 18px;
+  text-transform: uppercase;
 }
 section.home .home-content .call span {
   font-size: 11px;
@@ -667,7 +668,10 @@ section.home .home-content .call span {
   margin-left: -140px;
   margin-top: -42px;
   background: url(/img/home_text.png) no-repeat center center;
-  z-index: 1000;
+  z-index: 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .about-head {
   top: auto !important;
@@ -1248,7 +1252,7 @@ section.home .home-content .call span {
   margin-top: -100px;
   background: url(/img/judges_shapes_bkg.png) no-repeat center center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 980px) and (max-width: 1199px) {
   header {
     display: block;
   }
@@ -1311,7 +1315,6 @@ section.home .home-content .call span {
     color: #000;
     font-weight: bold;
     line-height: 13px;
-    text-transform: uppercase;
     width: 190px;
   }
   section.home .home-content h2 {
@@ -1320,27 +1323,36 @@ section.home .home-content .call span {
     color: #0000ea;
     font-size: 25px;
     line-height: 22px;
+    text-transform: uppercase;
   }
   section.home .home-content h3 {
     top: 490px;
     font-size: 20px;
     line-height: 18px;
     color: #8d8d8d;
+    text-transform: uppercase;
   }
   section.home .home-content .call {
-    top: 600px;
+    top: 550px;
   }
   section.home .home-content .call h5 {
     display: block;
-    font-size: 16px;
     width: auto;
     line-height: 18px;
+    text-transform: uppercase;
   }
   section.home .home-content .call span {
+    display: block;
     font-size: 11px;
-    top: 695px;
     letter-spacing: 0px;
     font-weight: normal;
+    padding-top: 70px;
+  }
+  section.home .home-content .call .btn-alt-outline {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 13px 18px;
+    font-size: 14px;
   }
   .bg-phone-line-one,
   .bg-phone-line-two,
@@ -1417,7 +1429,10 @@ section.home .home-content .call span {
     margin-top: -42px;
     background: url(/img/home_text.png) no-repeat center 360px;
     background-size: 522px 179px !important;
-    z-index: 1000;
+    z-index: 0;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
   }
   .about-first,
   .about-second,
@@ -1448,170 +1463,109 @@ section.home .home-content .call span {
     margin-top: -110px;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  html {
-    -webkit-user-select: none;
-  }
-  section {
-    zoom: .5;
-  }
+@media (max-width: 975px) {
   header {
-    padding-bottom: 0px;
+    display: block;
   }
   header .branding {
-    margin-top: 0px;
+    margin-top: 20px !important;
   }
   header .branding .logo-apps h1 a {
-    text-indent: -9999px;
-    margin-left: 0px;
     display: block;
-    width: 120px;
-    height: 75px;
-    background-image: url(/img/logo-apps.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  header .header-gcba {
-    height: 40px;
-    padding: 3px 0;
-  }
-  header .header-gcba .logo {
-    width: 172px;
-    height: 33px;
-    background: url(/img/logo-normal-2x-landscape.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    margin-left: 7px;
-  }
-  header .header-gcba h2.slogan {
-    font-size: 8px;
-    margin-top: 13px;
-    letter-spacing: -1px;
-    margin-right: 5px;
+    width: 169px !important;
+    height: 106px !important;
   }
   section {
+    padding-top: 0px;
     height: 800px;
+    width: 100%;
+    overflow: hidden;
   }
   section.home {
-    width: 100%;
-    background-position: center -230px;
-    background-size: 480%;
-    background-repeat: no-repeat;
+    background: url(/img/home_bkg.png) center -370px;
+    background-size: 2682px 1547px !important;
+    background-repeat: no-repeat !important;
   }
-  .bg-phone-pat {
-    margin-left: 55px;
-    margin-top: 110px;
-    width: 200px;
-    height: 266px;
-    z-index: 500;
-    background-size: cover;
+  section.home .home-content {
+    display: none;
   }
-  .bg-phone-line-one {
-    margin-left: 68px;
-    margin-top: 140px;
-    width: 184px;
-    height: 259px;
-    z-index: 500;
-    background-size: cover;
+  section.home .home-content .vimeo {
+    position: absolute;
+    top: 230px;
+    right: -10px;
+    display: block;
+    width: 270px;
+    height: 160px;
   }
-  .bg-phone-line-two {
-    margin-left: 56px;
-    margin-top: 107px;
-    width: 202px;
-    height: 259px;
-    z-index: 500;
-    background-size: cover;
+  section.home .home-content .bkg-sharp {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 266px;
+    height: 180px;
+    top: 215px;
+    right: -690px;
+    background-color: #2eddb2;
+    z-index: -1;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
   }
-}
-@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  header {
-    padding-bottom: 40px;
-  }
-  header .header-gcba {
-    height: 33px;
-    padding: 3px 0;
-  }
-  header .header-gcba .logo {
-    width: 172px;
-    height: 33px;
-    background: url(/img/logo-normal-2x-landscape.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    margin-left: 7px;
-  }
-  header .header-gcba h2.slogan {
-    font-size: 10px;
+  section.home .home-content h2,
+  section.home .home-content h3,
+  section.home .home-content h5,
+  section.home .home-content .call {
+    position: absolute;
+    right: 75px;
+    font-family: "Gotham", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 15px;
     margin-top: 10px;
     letter-spacing: -1px;
-    margin-right: 5px;
+    color: #000;
+    font-weight: bold;
+    line-height: 13px;
+    width: 190px;
   }
-  header {
-    padding-bottom: 0px;
+  section.home .home-content h2 {
+    top: 390px;
+    margin-top: 35px;
+    color: #0000ea;
+    font-size: 25px;
+    line-height: 22px;
+    text-transform: uppercase;
   }
-  header .branding {
-    margin-top: 0px;
+  section.home .home-content h3 {
+    top: 490px;
+    font-size: 20px;
+    line-height: 18px;
+    color: #8d8d8d;
+    text-transform: uppercase;
   }
-  header .branding .logo-apps h1 a {
-    text-indent: -9999px;
-    margin-left: 0px;
+  section.home .home-content .call {
+    top: 550px;
+  }
+  section.home .home-content .call h5 {
     display: block;
-    width: 120px;
-    height: 75px;
-    background-image: url(/img/logo-apps.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: auto;
+    line-height: 18px;
+    text-transform: uppercase;
   }
-  section {
-    height: 600px;
+  section.home .home-content .call span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    padding-top: 70px;
   }
-  section.home {
-    width: 100%;
-    background-position: center -230px;
-    background-size: 350%;
-    background-repeat: no-repeat;
-  }
-  .bg-phone-pat {
-    margin-left: 55px;
-    margin-top: 110px;
-    width: 200px;
-    height: 266px;
-    z-index: 500;
-    background-size: cover;
-  }
-  .bg-phone-line-one {
-    margin-left: 68px;
-    margin-top: 140px;
-    width: 184px;
-    height: 259px;
-    z-index: 500;
-    background-size: cover;
-  }
-  .bg-phone-line-two {
-    margin-left: 56px;
-    margin-top: 107px;
-    width: 202px;
-    height: 259px;
-    z-index: 500;
-    background-size: cover;
-  }
-}
-@media all and (max-device-width: 480px) and (orientation: portrait) {
-  
-}
-@media all and (max-device-width: 480px) and (orientation: landscape) {
-  a {
-    color: orange;
-  }
-}
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  a {
-    color: yellow;
-  }
-}
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  a {
-    color: purple;
+  section.home .home-content .call .btn-alt-outline {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 13px 18px;
+    font-size: 14px;
   }
 }
