@@ -21,7 +21,6 @@ html {
     -webkit-backface-visibility:     hidden;
     moz-backface-visibility:         hidden;
     -ms-backface-visibility:         hidden;
-    -webkit-user-select:             none;
     -webkit-touch-callout:           none;
 }
 
@@ -56,12 +55,12 @@ html {
 }
 
 ::-moz-selection {
-    color: gold;
-    background: red;
+    color: #fff;
+    background: #00d7c5;
 }
 ::selection {
-    color: gold;
-    background: red;
+    color: #fff;
+    background: #00d7c5;
 }
 
 
@@ -1611,6 +1610,10 @@ section.home {
 /// iPhone v(4,4S) portrait
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
+
+html {
+        -webkit-user-select:             none;
+    }
     section {
         zoom: .5;
     }
