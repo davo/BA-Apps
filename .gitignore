@@ -7,3 +7,5 @@ LICENCE
 README
 www.iml
 www.sublime-project
+*.less
+.DS_Store

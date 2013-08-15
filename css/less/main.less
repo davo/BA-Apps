@@ -23,6 +23,15 @@ html {
     moz-backface-visibility:         hidden;
     -ms-backface-visibility:         hidden;
     -webkit-touch-callout:           none;
+
+}
+
+a {
+   outline: 0;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
 }
 
 // Colours
@@ -396,12 +405,13 @@ header {
         & h2.slogan {
             font-family:"Gotham","Helvetica Neue","Helvetica",sans-serif;
             float:right;
-            font-size:15px;
-            margin-top: 10px;
+            font-size:13px;
+            margin-top: 12px;
             letter-spacing:-1px;
             color:#000;
             font-weight: bold;
-            line-height: 13px;
+            line-height: 12px;
+            text-transform: uppercase;
         }
     }
     
@@ -476,6 +486,7 @@ header {
     section {
         height: auto;
         overflow: auto;
+        padding-bottom: 90px;
 
         &.faq {
                 background-color: @basicGrey;
@@ -524,9 +535,6 @@ header {
             text-align: justify;
         }
 
-        p:last-child {
-            padding-bottom: 350px;
-        }
 
         ul.alt-list {
             margin: 10px;
@@ -704,6 +712,8 @@ section.home {
                 text-transform: uppercase;
             }
             span {
+                display: block;
+                width: 170px;
                 font-size: 11px;
                 top: 695px;
                 right: 165px;
@@ -1358,51 +1368,31 @@ section.home {
     background: url(../img/judges_shapes_bkg.png) no-repeat center center;
 }
 
-/// body {
-///     background-color: #211c6d;
-///     font-size: 1em;
-///     font-weight: 400;
-///     font-style: normal;
-///     -webkit-font-smoothing: antialiased;
-///     -webkit-text-stroke: 1px transparent;
-///     overflow: hidden;
-///     height: 100%;
-///     width: 100%;
-/// }
+/// FOOTER
 
-/// .center {
-///     margin: 0 auto;
-/// }
+.site-footer {
+  position: relative;
+  *zoom: 1;
+  color: #ffffff;
+  padding: 50px 10px;
+  height: inherit;
+  background-color: #333333;
+  background-image: none;
+  filter: none;
+  font-size: 12px;
+}
 
-/// .container {
-///     width: 100%;
-///     padding: 0 20px;
-///     margin: 0 auto;
-///     }
+.site-footer a {
+  color: #ffbd04;
+}
+.footer-gcba .logo-invertido{float:left;width:172px;height:33px;background:url(../img/logo-invertido.png)}
+.footer-gcba h2.slogan{float:right;margin-top:-4px;margin-bottom:0px;font-size:15px;letter-spacing:-1px; color: #fff}
 
+.footer-info {
+  display: block;
+  margin-top: 30px;
+}
 
-
-
-
-/// @media only screen 
-/// and (min-device-width : 320px) 
-/// and (max-device-width : 480px) {
-
-///         section {
-///           padding-top: 0px;
-///           height: 600px;
-///           width: 100%;
-///         }
-
-///         .bg-phone-line, .bg-phone-pat {
-///             position: absolute;
-///             top: 60px;
-///             left: 0;
-///             width: 250px;
-///             height: 600px;
-///         }
-
-/// }
 
 /// Desktop Media Queries
 
@@ -1504,7 +1494,8 @@ section.home {
                 }
                 span {
                     display: block;
-                    font-size: 11px;
+                    width: 90px;
+                    font-size: 10px;
                     letter-spacing: 0px;
                     font-weight: normal;
                     padding-top: 70px;
