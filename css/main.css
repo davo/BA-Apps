@@ -425,6 +425,7 @@ header .branding .logo-apps h1 a {
   line-height: 30px;
   padding-left: 5px;
   padding-right: 25px;
+  text-align: justify;
 }
 #page-static section p:last-child {
   padding-bottom: 350px;
@@ -434,7 +435,7 @@ header .branding .logo-apps h1 a {
   padding: 8px;
 }
 #page-static section ul.alt-list li {
-  list-style-type: circle;
+  list-style-type: disc;
   margin: 10px;
   padding: 8px;
 }
@@ -704,14 +705,16 @@ section.home .home-content .call span {
 }
 #about-content .about-first,
 #about-content .about-second,
-#about-content .about-third,
-#about-content .about-six {
+#about-content .about-third {
   padding-top: 400px;
   padding-left: -100px;
 }
-#about-content .about-four,
-#about-content .about-five {
+#about-content .about-four {
   padding-top: 380px;
+}
+#about-content .about-five {
+  padding-top: 410px;
+  padding-left: -100px;
 }
 .bg-about {
   margin-top: -110px;
